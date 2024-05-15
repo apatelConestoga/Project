@@ -9,8 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    //MARK: - Outklets
-    
+    //MARK: - Outlets
     @IBOutlet weak var textFieldFirst: UITextField!
     @IBOutlet weak var textFieldSecond: UITextField!
     @IBOutlet weak var textFieldResult: UITextField!
