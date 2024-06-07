@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xYU-Ql-OgT">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="ZZG-Io-rwa" customClass="InfoViewController" customModule="Lab5_MultiPage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FUw-fK-YKr">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5P-gt-A85">
-                                <rect key="frame" x="20" y="426" width="353" height="0.0"/>
+                                <rect key="frame" x="20" y="333.5" width="335" height="0.0"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -45,14 +45,14 @@
             <objects>
                 <viewController id="hmX-7f-wTT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bUN-Ef-bmr">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Qhb-dY-jkA">
-                                <rect key="frame" x="20" y="366" width="353" height="120"/>
+                                <rect key="frame" x="20" y="273.5" width="335" height="120"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcI-tw-WNE">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
                                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="qAu-kT-TQf"/>
@@ -67,7 +67,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPV-7w-QBP">
-                                        <rect key="frame" x="0.0" y="70" width="353" height="50"/>
+                                        <rect key="frame" x="0.0" y="70" width="335" height="50"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -81,7 +81,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fuv-ZG-Ys0">
-                                <rect key="frame" x="313" y="719" width="50" height="48.666666666666629"/>
+                                <rect key="frame" x="295" y="567.5" width="50" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Fuv-ZG-Ys0" secondAttribute="height" multiplier="1:1" id="2t5-wO-6K9"/>
                                     <constraint firstAttribute="width" constant="50" id="XHd-tg-meu"/>
@@ -115,14 +115,14 @@
             <objects>
                 <viewController id="ZVa-uw-pR5" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hhm-qF-JhS">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fbD-QE-p6K">
-                                <rect key="frame" x="20" y="366" width="353" height="120"/>
+                                <rect key="frame" x="20" y="273.5" width="335" height="120"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ExC-n3-1Pk">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="rY7-7l-VQi"/>
@@ -137,7 +137,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXo-zp-RjJ">
-                                        <rect key="frame" x="0.0" y="70" width="353" height="50"/>
+                                        <rect key="frame" x="0.0" y="70" width="335" height="50"/>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -170,17 +170,17 @@
             <objects>
                 <viewController id="cPc-Mo-hNt" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gM4-Ie-JGA">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="page1" translatesAutoresizingMaskIntoConstraints="NO" id="jKp-Gf-u1o">
-                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w3U-fp-nDc">
-                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6M-Km-RsY">
-                                        <rect key="frame" x="20" y="257.66666666666669" width="353" height="234"/>
+                                        <rect key="frame" x="20" y="184.5" width="335" height="234"/>
                                         <string key="text">Once upon a time, in a sunny forest, there lived a little rabbit named Benny. Benny loved to hop around and play with his friends.</string>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -219,17 +219,17 @@
             <objects>
                 <viewController id="2xl-8P-OvL" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ovY-0j-hBj">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="page2" translatesAutoresizingMaskIntoConstraints="NO" id="GnD-MT-jAi">
-                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PfN-P5-ZE2">
-                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One day, Benny found a shiny pebble near the stream. He picked it up and showed it to his best friend, Timmy the turtle." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8GD-2N-1kp">
-                                        <rect key="frame" x="20" y="277" width="353" height="195"/>
+                                        <rect key="frame" x="20" y="184.5" width="335" height="234"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -267,14 +267,14 @@
             <objects>
                 <viewController id="vEL-nX-EZl" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Gd-9s-ERD">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="f5i-tN-QfL">
-                                <rect key="frame" x="20" y="366" width="353" height="120"/>
+                                <rect key="frame" x="20" y="273.5" width="335" height="120"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oby-QU-5vt">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
                                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="7iF-DU-fos"/>
@@ -289,7 +289,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shi-6f-oed">
-                                        <rect key="frame" x="0.0" y="70" width="353" height="50"/>
+                                        <rect key="frame" x="0.0" y="70" width="335" height="50"/>
                                         <color key="backgroundColor" systemColor="tableCellBlueTextColor"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -322,17 +322,17 @@
             <objects>
                 <viewController id="XCQ-xr-YZD" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ITa-Yt-WRc">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="page3" translatesAutoresizingMaskIntoConstraints="NO" id="WKG-PE-xbz">
-                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6cJ-EH-bEx">
-                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In a small village, there lived a kind girl named Lily. Lily loved helping her neighbors and always had a smile on her face." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baj-FA-neo">
-                                        <rect key="frame" x="20" y="277" width="353" height="195"/>
+                                        <rect key="frame" x="20" y="184.5" width="335" height="234"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -370,17 +370,17 @@
             <objects>
                 <viewController id="3K7-P3-Thf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7ia-td-cDO">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="page3" translatesAutoresizingMaskIntoConstraints="NO" id="2AE-UX-Adk">
-                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KVx-cA-E8Q">
-                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hh-fs-P1X">
-                                        <rect key="frame" x="20" y="238.33333333333329" width="353" height="272.66666666666674"/>
+                                        <rect key="frame" x="20" y="145.5" width="335" height="312"/>
                                         <string key="text">One day, Leo decided to explore the mysterious forest near the castle. As he ventured deeper, he discovered a hidden path that led to a magical cave.</string>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -420,14 +420,14 @@
             <objects>
                 <viewController id="94W-9H-6nI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iEv-Yo-0yc">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RkN-qm-qMW">
-                                <rect key="frame" x="20" y="366" width="353" height="120"/>
+                                <rect key="frame" x="20" y="273.5" width="335" height="120"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPf-mp-y89">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
                                         <color key="backgroundColor" systemColor="systemMintColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="5hH-wF-aYx"/>
@@ -442,7 +442,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RH-bF-ixC">
-                                        <rect key="frame" x="0.0" y="70" width="353" height="50"/>
+                                        <rect key="frame" x="0.0" y="70" width="335" height="50"/>
                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -475,7 +475,7 @@
             <objects>
                 <navigationController id="xYU-Ql-OgT" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jq6-jn-neP">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -491,17 +491,17 @@
             <objects>
                 <viewController id="oq6-SE-lRf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9kh-fc-nqx">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="page1" translatesAutoresizingMaskIntoConstraints="NO" id="ua8-vH-8Ot">
-                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="49A-Cm-U7j">
-                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F57-k8-7Zc">
-                                        <rect key="frame" x="20" y="257.66666666666669" width="353" height="234"/>
+                                        <rect key="frame" x="20" y="165" width="335" height="273"/>
                                         <string key="text">In the kingdom of Brightland, there was a young prince named Leo. Prince Leo was brave and curious, always seeking new adventures.</string>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -538,9 +538,9 @@
     </scenes>
     <resources>
         <image name="info.circle" catalog="system" width="128" height="123"/>
-        <image name="page1" width="1787.6666259765625" height="1191.6666259765625"/>
-        <image name="page2" width="1333.3333740234375" height="2000"/>
-        <image name="page3" width="638" height="425.33334350585938"/>
+        <image name="page1" width="1787.5" height="1191.5"/>
+        <image name="page2" width="1333.5" height="2000"/>
+        <image name="page3" width="638" height="425.5"/>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -102,6 +102,7 @@ extension ViewController {
         switch sender.tag {
         case 1:
             self.txtUserInputs.isHidden = false
+            self.lblSuccess.text = ""
             self.txtUserInputs.text = "Full Name: \(self.txtFirstName.text ?? "") \(self.txtLastName.text ?? "") \nCountry: \(self.txtCountry.text ?? "") \nAge: \(self.txtAge.text ?? "")"
         case 2:
             self.lblSuccess.isHidden = false
