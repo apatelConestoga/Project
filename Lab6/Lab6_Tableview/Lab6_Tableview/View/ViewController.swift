@@ -47,6 +47,9 @@ class ViewController: UIViewController {
            let decodedItems = try? JSONDecoder().decode([ToDoItem].self, from: savedData) {
             self.arrToDo = decodedItems
             self.hideTableView(isHidden: false)
+            if arrToDo.isEmpty {
+                self.hideTableView(isHidden: true)
+            }
         } else {
             self.hideTableView(isHidden: true)
         }
