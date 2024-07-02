@@ -7,10 +7,10 @@
 
 import Foundation
 
-enum TaskStatus: Codable {
-    case pending
-    case completed
-    case ongoing
+enum TaskStatus:String, Codable {
+    case pending = "Pending"
+    case completed = "Completed"
+    case ongoing = "Ongoing"
 }
 
 class TaskColor:Codable {
@@ -24,6 +24,7 @@ class TaskColor:Codable {
 }
 
 struct Task: Codable {
+    var taskId: Int? = IDGenerator.generateID()
     var title: String?
     var taskDescription: String?
     var strDate: String?
@@ -31,4 +32,17 @@ struct Task: Codable {
     var color: TaskColor?
     var image: String?
     var status: TaskStatus? = .pending
+}
+
+class IDGenerator {
+    private static var currentID: Int = 0
+    
+    static func generateID() -> Int {
+        self.currentID += 1
+        return currentID
+    }
+    
+    func generateUUID() -> String {
+        return UUID().uuidString
+    }
 }

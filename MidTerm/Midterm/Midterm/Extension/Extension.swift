@@ -8,11 +8,11 @@
 import UIKit
 
 extension UIView {
-    func addDropShadow(shadowOpacity: Float = 0.3,
+    func addDropShadow(shadowColor: CGColor? = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1).cgColor, shadowOpacity: Float = 0.3,
                        shadowOffset: CGSize = CGSize(width: 0, height: -2),
                        shadowRadius: CGFloat = 10) {
         
-        self.layer.shadowColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1).cgColor
+        self.layer.shadowColor = shadowColor
         self.layer.shadowOpacity = shadowOpacity
         self.layer.shadowOffset = shadowOffset
         self.layer.shadowRadius = shadowRadius
@@ -59,6 +59,13 @@ extension UIView {
             alpha: CGFloat(1.0)
         )
     }
+    
+    func cornerRadiusWithPath(corner: UIRectCorner = [.topLeft, .bottomLeft]) {
+        let pathWithRadius = UIBezierPath(roundedRect:self.bounds, byRoundingCorners: corner, cornerRadii: CGSizeMake(10.0, 10.0))
+        let maskLayer = CAShapeLayer()
+        maskLayer.path = pathWithRadius.cgPath
+        self.layer.mask = maskLayer
+    }
 }
 
 extension UIViewController {
@@ -70,6 +77,23 @@ extension UIViewController {
         let alert = UIAlertController(title: title, message: "", preferredStyle: alertStyle)
         alert.addAction(UIAlertAction(title: actionTitle, style: .default, handler: { (action:UIAlertAction) in
             actionHandler?()
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func showSimpleAlertWithCancelOption(title:String? = nil,
+                         actionTitle:String? = "OK",
+                         actionTitleCancel:String? = "Cancel",
+                         alertStyle: UIAlertController.Style = .alert,
+                         actionHandler: ((Bool) -> Void)? = nil) {
+        
+        let alert = UIAlertController(title: title, message: "", preferredStyle: alertStyle)
+        alert.addAction(UIAlertAction(title: actionTitle, style: .default, handler: { (action:UIAlertAction) in
+            actionHandler?(false)
+        }))
+        
+        alert.addAction(UIAlertAction(title: actionTitleCancel, style: .destructive, handler: { (action:UIAlertAction) in
+            actionHandler?(true)
         }))
         self.present(alert, animated: true, completion: nil)
     }

@@ -28,6 +28,7 @@ class CustomGlobal {
     func storingItemsInPreferences(arrayValue: [Task]) {
         if let encodedData = try? JSONEncoder().encode(arrayValue) {
             UserDefaults.standard.set(encodedData, forKey: "StudentTask")
+            UserDefaults.standard.synchronize()
         }
     }
     

@@ -78,13 +78,10 @@ extension TaskCreationVC {
         if let datePicker = self.txtDate.inputView as? UIDatePicker {
             let dateFormatter = DateFormatter()
             dateFormatter.dateStyle = .medium
-            if Calendar.current.isDateInToday(datePicker.date) != true {
-                self.showSimpleAlert(title: "Date should be greater than or equal to current date ")
-                return
-            } else {
-                self.selectedDate = datePicker.date
-                self.txtDate.text = dateFormatter.string(from: datePicker.date)
-            }
+            datePicker.minimumDate = Date()
+            
+            self.selectedDate = datePicker.date
+            self.txtDate.text = dateFormatter.string(from: datePicker.date)
         }
         self.txtDate.resignFirstResponder()
     }
@@ -108,11 +105,11 @@ extension TaskCreationVC {
                         if self.viewImage.isHidden == false {
                             
                             //retrive Data
-                            var arrTasks = CustomGlobal.shared.retriveItemsFromPreference()
+                            var arrTasks = CustomGlobal.shared.retriveItemsFromPreference() ?? []
                             let objValue = Task(title: self.txtTitle.text, taskDescription: self.txtDescription.text, strDate: self.txtDate.text, dateValue: selectedDate, color: colorValue, image: CustomGlobal.shared.convertImageToBase64String(img: self.imgTask.image ?? UIImage()), status: .pending)
-                            arrTasks?.append(objValue)
-                            
-                            CustomGlobal.shared.storingItemsInPreferences(arrayValue: arrTasks ?? [])
+                            arrTasks.append(objValue)
+                
+                            CustomGlobal.shared.storingItemsInPreferences(arrayValue: arrTasks)
                             
                             self.showSimpleAlert(title: "Task Created Successfully...")
                             self.resetValue()

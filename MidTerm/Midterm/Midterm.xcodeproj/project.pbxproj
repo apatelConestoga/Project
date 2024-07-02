@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DA760EC2C333225001DAFF1 /* TaskDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA760EB2C333225001DAFF1 /* TaskDetailVC.swift */; };
+		5DA760EF2C335150001DAFF1 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA760EE2C335150001DAFF1 /* SettingVC.swift */; };
+		5DA760F22C337110001DAFF1 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA760F02C337110001DAFF1 /* SettingCell.swift */; };
+		5DA760F32C337110001DAFF1 /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DA760F12C337110001DAFF1 /* SettingCell.xib */; };
 		5DE755F32C2F5EA1002EB276 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE755F22C2F5EA1002EB276 /* AppDelegate.swift */; };
 		5DE755F52C2F5EA1002EB276 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE755F42C2F5EA1002EB276 /* SceneDelegate.swift */; };
 		5DE755FA2C2F5EA1002EB276 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE755F82C2F5EA1002EB276 /* Main.storyboard */; };
@@ -25,6 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DA760EB2C333225001DAFF1 /* TaskDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailVC.swift; sourceTree = "<group>"; };
+		5DA760EE2C335150001DAFF1 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		5DA760F02C337110001DAFF1 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		5DA760F12C337110001DAFF1 /* SettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
 		5DE755EF2C2F5EA1002EB276 /* Midterm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Midterm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DE755F22C2F5EA1002EB276 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DE755F42C2F5EA1002EB276 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +63,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5DA760EA2C333212001DAFF1 /* TaskDetail */ = {
+			isa = PBXGroup;
+			children = (
+				5DA760EB2C333225001DAFF1 /* TaskDetailVC.swift */,
+			);
+			path = TaskDetail;
+			sourceTree = "<group>";
+		};
+		5DA760ED2C335086001DAFF1 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				5DA760EE2C335150001DAFF1 /* SettingVC.swift */,
+				5DA760F02C337110001DAFF1 /* SettingCell.swift */,
+				5DA760F12C337110001DAFF1 /* SettingCell.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		5DE755E62C2F5EA1002EB276 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +100,8 @@
 		5DE755F12C2F5EA1002EB276 /* Midterm */ = {
 			isa = PBXGroup;
 			children = (
+				5DA760ED2C335086001DAFF1 /* Setting */,
+				5DA760EA2C333212001DAFF1 /* TaskDetail */,
 				5DE756132C2F757F002EB276 /* Extension */,
 				5DE756092C2F5EE0002EB276 /* Resources */,
 				5DE756082C2F5ED4002EB276 /* StoryBoard */,
@@ -194,6 +222,7 @@
 			files = (
 				5DE755FF2C2F5EA3002EB276 /* LaunchScreen.storyboard in Resources */,
 				5DE7560B2C2F5F03002EB276 /* Color.xcassets in Resources */,
+				5DA760F32C337110001DAFF1 /* SettingCell.xib in Resources */,
 				5DE755FC2C2F5EA3002EB276 /* Assets.xcassets in Resources */,
 				5DE756212C2F9D20002EB276 /* ListCell.xib in Resources */,
 				5DE756192C2F8526002EB276 /* ColorCell.xib in Resources */,
@@ -208,12 +237,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DA760EC2C333225001DAFF1 /* TaskDetailVC.swift in Sources */,
 				5DE7561B2C2F8B87002EB276 /* TaskModel.swift in Sources */,
+				5DA760F22C337110001DAFF1 /* SettingCell.swift in Sources */,
 				5DE7561D2C2F8C82002EB276 /* CustomGlobal.swift in Sources */,
 				5DE7560D2C2F5F96002EB276 /* TaskCreationVC.swift in Sources */,
 				5DE756152C2F758A002EB276 /* Extension.swift in Sources */,
 				5DE755F32C2F5EA1002EB276 /* AppDelegate.swift in Sources */,
 				5DE756202C2F9D20002EB276 /* ListCell.swift in Sources */,
+				5DA760EF2C335150001DAFF1 /* SettingVC.swift in Sources */,
 				5DE756182C2F8526002EB276 /* ColorCell.swift in Sources */,
 				5DE756232C2FA439002EB276 /* TaskListVC.swift in Sources */,
 				5DE755F52C2F5EA1002EB276 /* SceneDelegate.swift in Sources */,
