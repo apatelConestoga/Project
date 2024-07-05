@@ -108,6 +108,7 @@ extension UITextField {
         //Add DatePicker as inputView
         let datePicker = UIDatePicker(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 216))
         datePicker.datePickerMode = .date
+        datePicker.minimumDate = Date()
         datePicker.preferredDatePickerStyle = .wheels
         self.inputView = datePicker
         

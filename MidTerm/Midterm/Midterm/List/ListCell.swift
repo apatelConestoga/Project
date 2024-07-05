@@ -13,10 +13,11 @@ class ListCell: UITableViewCell {
     @IBOutlet weak var viewDate: UIView!
     @IBOutlet weak var lblDate: UILabel!
     @IBOutlet weak var lblMonthYear: UILabel!
+    
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblDescription: UILabel!
     @IBOutlet weak var lblStatus: UILabel!
-    @IBOutlet weak var imgTask: UIImageView!
+
     @IBOutlet weak var viewPriority: UIView!
     
     static var identifier = String(describing: ListCell.self)
@@ -50,8 +51,9 @@ class ListCell: UITableViewCell {
         self.lblDescription.text = objTask.taskDescription ?? ""
         let dateValue = objTask.strDate?.split(separator: "-")
         self.lblDate.text = dateValue?[0].description
+
         self.lblMonthYear.text = (dateValue?[1].description ?? "") + " " + (dateValue?[2].description ?? "")
-        self.imgTask.image = CustomGlobal.shared.convertBase64StringToImage(imageBase64String: objTask.image ?? "")
+        
         self.lblStatus.text = objTask.status?.rawValue
         switch objTask.status {
         case .pending:

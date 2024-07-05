@@ -20,7 +20,9 @@ class TaskDetailVC: UIViewController {
     @IBOutlet weak var btnOngoing: UIButton!
     @IBOutlet weak var btnCompleted: UIButton!
     
+    @IBOutlet weak var lblStatus: UILabel!
     @IBOutlet weak var indicator: UIActivityIndicatorView!
+    
     //MARK: - Variable
     var selectedTask: Task?
     //MARK: - View Life Cycle
@@ -30,11 +32,13 @@ class TaskDetailVC: UIViewController {
         self.displaySelectedTaskOutlet()
     }
     
+    
+    //MARK: - User Function
     private func configureOutlet() {
-        self.viewDate.layer.cornerRadius = 10
+        self.viewDate.layer.cornerRadius = 20
         self.viewPriority.layer.cornerRadius = self.viewPriority.frame.width / 2
-        self.btnOngoing.layer.cornerRadius = 10
-        self.btnCompleted.layer.cornerRadius = 10
+        self.btnOngoing.layer.cornerRadius = 20
+        self.btnCompleted.layer.cornerRadius = 20
         
         self.viewDate.addDropShadow(shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1).cgColor)
         self.viewPriority.addDropShadow(shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1).cgColor)
@@ -50,6 +54,17 @@ class TaskDetailVC: UIViewController {
         let dateValue = self.selectedTask?.strDate?.split(separator: "-")
         self.lblDate.text = dateValue?[0].description
         self.lblMonthYear.text = (dateValue?[1].description ?? "") + " " + (dateValue?[2].description ?? "")
+        self.lblStatus.text = self.selectedTask?.status?.rawValue
+        switch self.selectedTask?.status {
+        case .pending:
+            self.lblStatus.textColor = .red
+        case .completed:
+            self.lblStatus.textColor = .green
+        case .ongoing:
+            self.lblStatus.textColor = .orange
+        case .none:
+            break
+        }
         self.viewPriority.hexStringToUIColor(hex: self.selectedTask?.color?.color ?? "")
         if selectedTask?.status == .pending {
             self.btnOngoing.isEnabled = true
@@ -81,6 +96,10 @@ class TaskDetailVC: UIViewController {
                 
                 self.btnOngoing.alpha = 0.5
                 self.btnCompleted.alpha = 1
+                
+                self.lblStatus.text = TaskStatus.ongoing.rawValue
+                self.lblStatus.textColor = .orange
+                
             } else {
                 arrTask?[index].status = .completed
                 
@@ -89,9 +108,11 @@ class TaskDetailVC: UIViewController {
                 
                 self.btnOngoing.alpha = 0.5
                 self.btnCompleted.alpha = 0.5
+                self.lblStatus.text = TaskStatus.completed.rawValue
+                self.lblStatus.textColor = .green
             }
             CustomGlobal.shared.storingItemsInPreferences(arrayValue: arrTask ?? [])
-            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
                 self.indicator.isHidden = true
                 self.indicator.stopAnimating()
             }

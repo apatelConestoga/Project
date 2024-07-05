@@ -10,7 +10,7 @@ import UIKit
 class SettingCell: UITableViewCell {
 
     @IBOutlet weak var lblSetting: UILabel!
-    @IBOutlet weak var imgSelect: UIImageView!
+    @IBOutlet weak var toggleSwitch: UISwitch!
     
     static let identiifier = String(describing: SettingCell.self)
     
@@ -27,9 +27,9 @@ class SettingCell: UITableViewCell {
     
     func cellConfiguration(obj: SettingValue) {
         if obj.isSelected == true {
-            self.imgSelect.image = UIImage(named: "ic_radio_selected")
+            self.toggleSwitch.setOn(true, animated: false)
         } else {
-            self.imgSelect.image = UIImage(named: "ic_radio_unselected")
+            self.toggleSwitch.setOn(false, animated: false)
         }
         self.lblSetting.text = obj.value
     }

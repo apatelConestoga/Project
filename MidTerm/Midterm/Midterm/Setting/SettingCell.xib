@@ -29,34 +29,30 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLN-jb-4uX">
-                        <rect key="frame" x="5" y="20.333333333333329" width="265" height="19.666666666666671"/>
+                        <rect key="frame" x="5" y="20.333333333333329" width="246" height="19.666666666666671"/>
                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                         <color key="textColor" name="primary"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qff-te-C4y">
-                        <rect key="frame" x="280" y="15" width="30" height="30"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="qff-te-C4y" secondAttribute="height" multiplier="1:1" id="JE1-1S-E8a"/>
-                            <constraint firstAttribute="width" constant="30" id="nje-0B-s18"/>
-                        </constraints>
-                    </imageView>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Pn-QZ-eW5">
+                        <rect key="frame" x="261" y="14.666666666666664" width="51" height="31"/>
+                    </switch>
                 </subviews>
                 <constraints>
                     <constraint firstItem="DkB-DQ-Wry" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4Rh-7A-fNH"/>
+                    <constraint firstItem="3Pn-QZ-eW5" firstAttribute="leading" secondItem="ZLN-jb-4uX" secondAttribute="trailing" constant="10" id="AbL-Ep-TDS"/>
                     <constraint firstAttribute="bottom" secondItem="DkB-DQ-Wry" secondAttribute="bottom" id="DR3-2A-HA6"/>
-                    <constraint firstItem="qff-te-C4y" firstAttribute="leading" secondItem="ZLN-jb-4uX" secondAttribute="trailing" constant="10" id="Ji5-Fd-TNr"/>
+                    <constraint firstAttribute="trailing" secondItem="3Pn-QZ-eW5" secondAttribute="trailing" constant="10" id="M7I-27-kMo"/>
                     <constraint firstItem="ZLN-jb-4uX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="OFr-e7-4FI"/>
-                    <constraint firstAttribute="trailing" secondItem="qff-te-C4y" secondAttribute="trailing" constant="10" id="R6P-KY-OR2"/>
                     <constraint firstAttribute="trailing" secondItem="DkB-DQ-Wry" secondAttribute="trailing" id="fIY-K4-zOb"/>
-                    <constraint firstItem="qff-te-C4y" firstAttribute="centerY" secondItem="ZLN-jb-4uX" secondAttribute="centerY" id="vJ1-D8-Y3e"/>
+                    <constraint firstItem="3Pn-QZ-eW5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fZs-De-Opm"/>
                     <constraint firstItem="ZLN-jb-4uX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wm1-Py-Fjl"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="imgSelect" destination="qff-te-C4y" id="YXm-Xh-ERK"/>
                 <outlet property="lblSetting" destination="ZLN-jb-4uX" id="n8i-S4-VqZ"/>
+                <outlet property="toggleSwitch" destination="3Pn-QZ-eW5" id="4E8-0s-oTt"/>
             </connections>
             <point key="canvasLocation" x="126.71755725190839" y="19.718309859154932"/>
         </tableViewCell>

@@ -9,6 +9,7 @@ import UIKit
 
 class TaskCreationVC: UIViewController {
 
+    //MARK: - Outlets
     @IBOutlet weak var bgView: UIView!
     @IBOutlet weak var txtTitle: UITextField!
     @IBOutlet weak var txtDescription: UITextView!
@@ -21,16 +22,20 @@ class TaskCreationVC: UIViewController {
     @IBOutlet weak var viewUploadImage: UIView!
     @IBOutlet weak var btnCreateTask: UIButton!
     
+    //MARK: - Variable
     var arrColor = [TaskColor]()
     var selectedDate: Date?
     
+    //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configureOutlets()
         self.configureCollectionView()
     }
     
+    //MARK: - User Function
     private func configureOutlets() {
+        self.navigationItem.title = "Abc"
         self.txtTitle.delegate = self
         self.uploadImageView.addDashedBorder()
         self.bgView.addDropShadow()
@@ -72,14 +77,13 @@ class TaskCreationVC: UIViewController {
     
 }
 
+//MARK: - Button Action
 extension TaskCreationVC {
     
     @objc func doneButtonPressed() {
         if let datePicker = self.txtDate.inputView as? UIDatePicker {
             let dateFormatter = DateFormatter()
-            dateFormatter.dateStyle = .medium
-            datePicker.minimumDate = Date()
-            
+            dateFormatter.dateFormat = "dd-MMM-yyyy"
             self.selectedDate = datePicker.date
             self.txtDate.text = dateFormatter.string(from: datePicker.date)
         }
@@ -108,7 +112,8 @@ extension TaskCreationVC {
                             var arrTasks = CustomGlobal.shared.retriveItemsFromPreference() ?? []
                             let objValue = Task(title: self.txtTitle.text, taskDescription: self.txtDescription.text, strDate: self.txtDate.text, dateValue: selectedDate, color: colorValue, image: CustomGlobal.shared.convertImageToBase64String(img: self.imgTask.image ?? UIImage()), status: .pending)
                             arrTasks.append(objValue)
-                
+                            
+                            //Saving Data
                             CustomGlobal.shared.storingItemsInPreferences(arrayValue: arrTasks)
                             
                             self.showSimpleAlert(title: "Task Created Successfully...")
@@ -131,6 +136,7 @@ extension TaskCreationVC {
     }
 }
 
+//MARK: - UITextField and UITextView Delegate
 extension TaskCreationVC: UITextViewDelegate, UITextFieldDelegate {
     func textViewDidBeginEditing(_ textView: UITextView) {
         if textView.textColor == UIColor.lightGray {
@@ -160,6 +166,7 @@ extension TaskCreationVC: UITextViewDelegate, UITextFieldDelegate {
     }
 }
 
+//MARK: - UICollectionView Delegate and DataSource
 extension TaskCreationVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.arrColor.count
@@ -183,6 +190,7 @@ extension TaskCreationVC: UICollectionViewDelegate, UICollectionViewDataSource, 
     
 }
 
+//MARK: - UIImagePickerController Delegate
 extension TaskCreationVC: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func openImagePickerView() {

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D0DAF6A2C389C7A00535A38 /* SettingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0DAF692C389C7A00535A38 /* SettingHeaderView.swift */; };
+		5D0DAF6C2C389C9400535A38 /* SettingHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D0DAF6B2C389C9400535A38 /* SettingHeaderView.xib */; };
+		5D5E75C32C37D94C00E03F57 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5E75C22C37D94C00E03F57 /* CustomTabBarController.swift */; };
 		5DA760EC2C333225001DAFF1 /* TaskDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA760EB2C333225001DAFF1 /* TaskDetailVC.swift */; };
 		5DA760EF2C335150001DAFF1 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA760EE2C335150001DAFF1 /* SettingVC.swift */; };
 		5DA760F22C337110001DAFF1 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA760F02C337110001DAFF1 /* SettingCell.swift */; };
@@ -29,6 +32,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D0DAF692C389C7A00535A38 /* SettingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingHeaderView.swift; sourceTree = "<group>"; };
+		5D0DAF6B2C389C9400535A38 /* SettingHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingHeaderView.xib; sourceTree = "<group>"; };
+		5D5E75C22C37D94C00E03F57 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		5DA760EB2C333225001DAFF1 /* TaskDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailVC.swift; sourceTree = "<group>"; };
 		5DA760EE2C335150001DAFF1 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		5DA760F02C337110001DAFF1 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
@@ -63,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D5E75BF2C37D90C00E03F57 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				5D5E75C22C37D94C00E03F57 /* CustomTabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		5DA760EA2C333212001DAFF1 /* TaskDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +91,8 @@
 				5DA760EE2C335150001DAFF1 /* SettingVC.swift */,
 				5DA760F02C337110001DAFF1 /* SettingCell.swift */,
 				5DA760F12C337110001DAFF1 /* SettingCell.xib */,
+				5D0DAF692C389C7A00535A38 /* SettingHeaderView.swift */,
+				5D0DAF6B2C389C9400535A38 /* SettingHeaderView.xib */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -100,6 +116,7 @@
 		5DE755F12C2F5EA1002EB276 /* Midterm */ = {
 			isa = PBXGroup;
 			children = (
+				5D5E75BF2C37D90C00E03F57 /* TabBar */,
 				5DA760ED2C335086001DAFF1 /* Setting */,
 				5DA760EA2C333212001DAFF1 /* TaskDetail */,
 				5DE756132C2F757F002EB276 /* Extension */,
@@ -220,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D0DAF6C2C389C9400535A38 /* SettingHeaderView.xib in Resources */,
 				5DE755FF2C2F5EA3002EB276 /* LaunchScreen.storyboard in Resources */,
 				5DE7560B2C2F5F03002EB276 /* Color.xcassets in Resources */,
 				5DA760F32C337110001DAFF1 /* SettingCell.xib in Resources */,
@@ -247,6 +265,8 @@
 				5DE756202C2F9D20002EB276 /* ListCell.swift in Sources */,
 				5DA760EF2C335150001DAFF1 /* SettingVC.swift in Sources */,
 				5DE756182C2F8526002EB276 /* ColorCell.swift in Sources */,
+				5D0DAF6A2C389C7A00535A38 /* SettingHeaderView.swift in Sources */,
+				5D5E75C32C37D94C00E03F57 /* CustomTabBarController.swift in Sources */,
 				5DE756232C2FA439002EB276 /* TaskListVC.swift in Sources */,
 				5DE755F52C2F5EA1002EB276 /* SceneDelegate.swift in Sources */,
 			);
@@ -408,6 +428,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,6 +461,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
