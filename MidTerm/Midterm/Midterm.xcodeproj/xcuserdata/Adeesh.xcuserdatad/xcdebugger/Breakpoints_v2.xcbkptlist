@@ -14,10 +14,10 @@
             filePath = "Midterm/List/TaskListVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "checkForReminders()"
-            landmarkType = "7">
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "TaskListVC"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "7FEF2994-D890-4E3D-8573-8FE67872580A - 55b6045b0eeb5e11"
@@ -62,8 +62,8 @@
             filePath = "Midterm/List/TaskListVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "checkForReminders()"
             landmarkType = "7">
             <Locations>
@@ -111,54 +111,6 @@
                   startingLineNumber = "59"
                   endingLineNumber = "59"
                   offsetFromSymbolStart = "561">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EE97D7BB-8807-4619-96EF-A724BA3B6C2A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Midterm/Setting/SettingVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
-            landmarkName = "toggleClicked(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "EE97D7BB-8807-4619-96EF-A724BA3B6C2A - dda772bd896c5902"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Midterm.SettingVC.toggleClicked(__C.UISwitch) -&gt; ()"
-                  moduleName = "Midterm"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Adeesh/Personal/Conestoga%20Projects/MobileSolution/Assignment/Assignments_1/Project/MidTerm/Midterm/Midterm/Setting/SettingVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "168"
-                  endingLineNumber = "168"
-                  offsetFromSymbolStart = "62">
-               </Location>
-               <Location
-                  uuid = "EE97D7BB-8807-4619-96EF-A724BA3B6C2A - b2f037a071916707"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Midterm.SettingValue) -&gt; () in Midterm.SettingVC.toggleClicked(__C.UISwitch) -&gt; ()"
-                  moduleName = "Midterm"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Adeesh/Personal/Conestoga%20Projects/MobileSolution/Assignment/Assignments_1/Project/MidTerm/Midterm/Midterm/Setting/SettingVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "168"
-                  endingLineNumber = "168"
-                  offsetFromSymbolStart = "29">
                </Location>
             </Locations>
          </BreakpointContent>

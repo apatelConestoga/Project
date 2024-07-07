@@ -154,22 +154,29 @@ extension SettingVC {
     }
     
     @IBAction func btnClearClicked(_ sender: UIButton) {
-        
-        _ = self.arrSetting.map { $0.values?.map {$0.isSelected = false} }
-        self.filterValueReturn?(CustomGlobal.shared.retriveItemsFromPreference() ?? [], nil)
-        self.navigationController?.popViewController(animated: true)
+        self.showSimpleAlertWithCancelOption(title: "Are you sure you want to clear?") { isCancel in
+            if isCancel == false {
+                _ = self.arrSetting.map { $0.values?.map {$0.isSelected = false} }
+                self.filterValueReturn?(CustomGlobal.shared.retriveItemsFromPreference() ?? [], nil)
+                self.navigationController?.popViewController(animated: true)
+            }
+        }
     }
     
     @IBAction func btnApplyClicked(_ sender: UIButton) {
-        self.filterValueReturn?(self.doFilter().0, self.doFilter().1)
-        self.navigationController?.popViewController(animated: true)
+        self.showSimpleAlert(title: "Fillter applied!") {
+            self.filterValueReturn?(self.doFilter().0, self.doFilter().1)
+            self.navigationController?.popViewController(animated: true)
+        }
     }
     
     @objc func toggleClicked(_ sender: UISwitch) {
         _ = self.arrSetting[sender.tag].values?.map { $0.isSelected = false }
-        
-        self.arrSetting[sender.tag].values?[Int(sender.accessibilityIdentifier ?? "0") ?? 0].isSelected = true
-        
+        if sender.isOn == true {
+            self.arrSetting[sender.tag].values?[Int(sender.accessibilityIdentifier ?? "0") ?? 0].isSelected = true
+        } else{
+            self.arrSetting[sender.tag].values?[Int(sender.accessibilityIdentifier ?? "0") ?? 0].isSelected = false
+        }
         self.tblSetting.reloadData()
     }
     
