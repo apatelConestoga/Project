@@ -9,27 +9,43 @@
 /* Begin PBXBuildFile section */
 		5D05FEA82C2537A0008205DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D05FEA72C2537A0008205DB /* AppDelegate.swift */; };
 		5D05FEAA2C2537A0008205DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D05FEA92C2537A0008205DB /* SceneDelegate.swift */; };
-		5D05FEAC2C2537A0008205DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D05FEAB2C2537A0008205DB /* ViewController.swift */; };
 		5D05FEAF2C2537A0008205DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D05FEAD2C2537A0008205DB /* Main.storyboard */; };
 		5D05FEB12C2537A2008205DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D05FEB02C2537A2008205DB /* Assets.xcassets */; };
 		5D05FEB42C2537A2008205DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D05FEB22C2537A2008205DB /* LaunchScreen.storyboard */; };
-		5D2796792C26087E00A4C94D /* ToDoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2796782C26087E00A4C94D /* ToDoListCell.swift */; };
-		5D27967B2C260BAB00A4C94D /* Extension+UIViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D27967A2C260BAB00A4C94D /* Extension+UIViewControl.swift */; };
-		5D27967D2C2614CF00A4C94D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D27967C2C2614CF00A4C94D /* Model.swift */; };
+		5DC757B42C3B0CC7002FA70C /* CarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC757B32C3B0CC7002FA70C /* CarVC.swift */; };
+		5DC757B72C3B0D44002FA70C /* CarTBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC757B52C3B0D44002FA70C /* CarTBL.swift */; };
+		5DC757B82C3B0D44002FA70C /* CarTBL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DC757B62C3B0D44002FA70C /* CarTBL.xib */; };
+		5DC757BA2C3B0E92002FA70C /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC757B92C3B0E92002FA70C /* CarModel.swift */; };
+		5DC757BC2C3B158E002FA70C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC757BB2C3B158E002FA70C /* Extension.swift */; };
+		5DC757BF2C3B18AB002FA70C /* ToDoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC757BE2C3B18AB002FA70C /* ToDoVC.swift */; };
+		5DC757C22C3B2BE7002FA70C /* ToDoTBLCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC757C02C3B2BE7002FA70C /* ToDoTBLCell.swift */; };
+		5DC757C32C3B2BE7002FA70C /* ToDoTBLCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DC757C12C3B2BE7002FA70C /* ToDoTBLCell.xib */; };
+		5DC757C72C3B3018002FA70C /* FriendsTBLCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC757C52C3B3018002FA70C /* FriendsTBLCell.swift */; };
+		5DC757C82C3B3018002FA70C /* FriendsTBLCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DC757C62C3B3018002FA70C /* FriendsTBLCell.xib */; };
+		5DC757CA2C3B317F002FA70C /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC757C92C3B317F002FA70C /* FriendModel.swift */; };
+		5DC757CC2C3B3336002FA70C /* FriendsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC757CB2C3B3336002FA70C /* FriendsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5D05FEA42C2537A0008205DB /* Lab6_Tableview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab6_Tableview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D05FEA72C2537A0008205DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D05FEA92C2537A0008205DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5D05FEAB2C2537A0008205DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5D05FEAE2C2537A0008205DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D05FEB02C2537A2008205DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D05FEB32C2537A2008205DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D05FEB52C2537A2008205DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D2796782C26087E00A4C94D /* ToDoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListCell.swift; sourceTree = "<group>"; };
-		5D27967A2C260BAB00A4C94D /* Extension+UIViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewControl.swift"; sourceTree = "<group>"; };
-		5D27967C2C2614CF00A4C94D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		5DC757B32C3B0CC7002FA70C /* CarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarVC.swift; sourceTree = "<group>"; };
+		5DC757B52C3B0D44002FA70C /* CarTBL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTBL.swift; sourceTree = "<group>"; };
+		5DC757B62C3B0D44002FA70C /* CarTBL.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarTBL.xib; sourceTree = "<group>"; };
+		5DC757B92C3B0E92002FA70C /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
+		5DC757BB2C3B158E002FA70C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		5DC757BE2C3B18AB002FA70C /* ToDoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoVC.swift; sourceTree = "<group>"; };
+		5DC757C02C3B2BE7002FA70C /* ToDoTBLCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTBLCell.swift; sourceTree = "<group>"; };
+		5DC757C12C3B2BE7002FA70C /* ToDoTBLCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoTBLCell.xib; sourceTree = "<group>"; };
+		5DC757C52C3B3018002FA70C /* FriendsTBLCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTBLCell.swift; sourceTree = "<group>"; };
+		5DC757C62C3B3018002FA70C /* FriendsTBLCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendsTBLCell.xib; sourceTree = "<group>"; };
+		5DC757C92C3B317F002FA70C /* FriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
+		5DC757CB2C3B3336002FA70C /* FriendsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +78,6 @@
 		5D05FEA62C2537A0008205DB /* Lab6_Tableview */ = {
 			isa = PBXGroup;
 			children = (
-				5D2796802C2616D000A4C94D /* Extension */,
 				5D27967F2C2616BF00A4C94D /* Model */,
 				5D27967E2C2616B600A4C94D /* View */,
 				5D05FEA72C2537A0008205DB /* AppDelegate.swift */,
@@ -71,6 +86,7 @@
 				5D05FEB02C2537A2008205DB /* Assets.xcassets */,
 				5D05FEB22C2537A2008205DB /* LaunchScreen.storyboard */,
 				5D05FEB52C2537A2008205DB /* Info.plist */,
+				5DC757BB2C3B158E002FA70C /* Extension.swift */,
 			);
 			path = Lab6_Tableview;
 			sourceTree = "<group>";
@@ -78,8 +94,9 @@
 		5D27967E2C2616B600A4C94D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5D05FEAB2C2537A0008205DB /* ViewController.swift */,
-				5D2796782C26087E00A4C94D /* ToDoListCell.swift */,
+				5DC757C42C3B3007002FA70C /* Friends */,
+				5DC757BD2C3B1895002FA70C /* Todo */,
+				5DC757B22C3B0CB3002FA70C /* Car */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -87,17 +104,40 @@
 		5D27967F2C2616BF00A4C94D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5D27967C2C2614CF00A4C94D /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		5D2796802C2616D000A4C94D /* Extension */ = {
+		5DC757B22C3B0CB3002FA70C /* Car */ = {
 			isa = PBXGroup;
 			children = (
-				5D27967A2C260BAB00A4C94D /* Extension+UIViewControl.swift */,
+				5DC757B32C3B0CC7002FA70C /* CarVC.swift */,
+				5DC757B52C3B0D44002FA70C /* CarTBL.swift */,
+				5DC757B62C3B0D44002FA70C /* CarTBL.xib */,
+				5DC757B92C3B0E92002FA70C /* CarModel.swift */,
 			);
-			path = Extension;
+			path = Car;
+			sourceTree = "<group>";
+		};
+		5DC757BD2C3B1895002FA70C /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				5DC757BE2C3B18AB002FA70C /* ToDoVC.swift */,
+				5DC757C02C3B2BE7002FA70C /* ToDoTBLCell.swift */,
+				5DC757C12C3B2BE7002FA70C /* ToDoTBLCell.xib */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		5DC757C42C3B3007002FA70C /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				5DC757C52C3B3018002FA70C /* FriendsTBLCell.swift */,
+				5DC757C62C3B3018002FA70C /* FriendsTBLCell.xib */,
+				5DC757C92C3B317F002FA70C /* FriendModel.swift */,
+				5DC757CB2C3B3336002FA70C /* FriendsVC.swift */,
+			);
+			path = Friends;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,9 +198,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DC757C82C3B3018002FA70C /* FriendsTBLCell.xib in Resources */,
 				5D05FEB42C2537A2008205DB /* LaunchScreen.storyboard in Resources */,
 				5D05FEB12C2537A2008205DB /* Assets.xcassets in Resources */,
+				5DC757C32C3B2BE7002FA70C /* ToDoTBLCell.xib in Resources */,
 				5D05FEAF2C2537A0008205DB /* Main.storyboard in Resources */,
+				5DC757B82C3B0D44002FA70C /* CarTBL.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,12 +214,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D05FEAC2C2537A0008205DB /* ViewController.swift in Sources */,
+				5DC757CC2C3B3336002FA70C /* FriendsVC.swift in Sources */,
+				5DC757B72C3B0D44002FA70C /* CarTBL.swift in Sources */,
 				5D05FEA82C2537A0008205DB /* AppDelegate.swift in Sources */,
-				5D27967B2C260BAB00A4C94D /* Extension+UIViewControl.swift in Sources */,
-				5D27967D2C2614CF00A4C94D /* Model.swift in Sources */,
+				5DC757BA2C3B0E92002FA70C /* CarModel.swift in Sources */,
+				5DC757BC2C3B158E002FA70C /* Extension.swift in Sources */,
+				5DC757C22C3B2BE7002FA70C /* ToDoTBLCell.swift in Sources */,
+				5DC757CA2C3B317F002FA70C /* FriendModel.swift in Sources */,
+				5DC757BF2C3B18AB002FA70C /* ToDoVC.swift in Sources */,
+				5DC757B42C3B0CC7002FA70C /* CarVC.swift in Sources */,
 				5D05FEAA2C2537A0008205DB /* SceneDelegate.swift in Sources */,
-				5D2796792C26087E00A4C94D /* ToDoListCell.swift in Sources */,
+				5DC757C72C3B3018002FA70C /* FriendsTBLCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +378,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Lab6_Tableview/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "User Managment application";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -361,6 +410,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Lab6_Tableview/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "User Managment application";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
