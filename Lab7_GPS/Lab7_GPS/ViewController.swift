@@ -50,8 +50,9 @@ class ViewController: UIViewController {
         self.lblDistance.text = String(format: "Distance: %.2f km", manager.totalDistance / 1000) // Convert meters to kilometers
         self.lblAcceleration.text = String(format: "Max Acceleration: %.2f m/s²", manager.maxAcceleration)
         
-        if manager.currentSpeed > 115 {
+        if manager.currentSpeed > manager.customSpeedLimit {
             self.viewTopBar.backgroundColor = .red
+            self.lblDistanceBeforeLimit.text = String(format: "Distance before limit: %.2f km", 0.00)
         } else {
             let distanceBeforeLimit = (manager.customSpeedLimit - manager.currentSpeed) * 1000 / 3600
             self.lblDistanceBeforeLimit.text = String(format: "Distance before limit: %.2f km", distanceBeforeLimit)
