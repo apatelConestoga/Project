@@ -299,6 +299,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Lab7_GPS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "GPS and Maps";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to track your trip.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -331,6 +332,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Lab7_GPS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "GPS and Maps";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to track your trip.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
