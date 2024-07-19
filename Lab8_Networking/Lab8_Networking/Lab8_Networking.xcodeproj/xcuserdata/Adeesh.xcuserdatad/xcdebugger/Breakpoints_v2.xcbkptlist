@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DAB27BEF-F0A7-4D58-99B0-CECD2AC8FEE4"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A1639727-F35D-4C4C-918C-36D7695D748B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab8_Networking/Services/WeatherService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "fetchWeatherData(latitude:longitude:address:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A1639727-F35D-4C4C-918C-36D7695D748B - f3b3ed7ab527c532"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lab8_Networking.WeatherService.fetchWeatherData(latitude: Swift.Double, longitude: Swift.Double, completion: (Swift.Result&lt;Lab8_Networking.WeatherModel, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Lab8_Networking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adeesh/Personal/Conestoga%20Projects/MobileSolution/Assignment/Assignments_1/Project/Lab8_Networking/Lab8_Networking/Lab8_Networking/Services/WeatherService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "801">
+               </Location>
+               <Location
+                  uuid = "A1639727-F35D-4C4C-918C-36D7695D748B - fc206cbba4d81d7c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lab8_Networking.WeatherService.fetchWeatherData(latitude: Swift.Double, longitude: Swift.Double, address: Swift.String, completion: (Swift.Result&lt;Lab8_Networking.WeatherModel, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Lab8_Networking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adeesh/Personal/Conestoga%20Projects/MobileSolution/Assignment/Assignments_1/Project/Lab8_Networking/Lab8_Networking/Lab8_Networking/Services/WeatherService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "756">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1401D917-DC96-4F7D-A20F-9124D78214CB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab8_Networking/View/WeatherViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "fetchWeatherData(location:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -47,14 +47,14 @@ class ViewController: UIViewController {
         self.lblSpeed.text = String(format: "Speed: %.2f km/h", manager.currentSpeed)
         self.lblMaxSpeed.text = String(format: "Max Speed: %.2f km/h", manager.maxSpeed)
         self.lblAverageSpeed.text = String(format: "Avg Speed: %.2f km/h", manager.averageSpeed)
-        self.lblDistance.text = String(format: "Distance: %.2f km", manager.totalDistance / 1000) // Convert meters to kilometers
+        self.lblDistance.text = String(format: "Distance: %.2f km", manager.totalDistance / 1000)
         self.lblAcceleration.text = String(format: "Max Acceleration: %.2f m/s²", manager.maxAcceleration)
         
         if manager.currentSpeed > manager.customSpeedLimit {
             self.viewTopBar.backgroundColor = .red
             self.lblDistanceBeforeLimit.text = String(format: "Distance before limit: %.2f km", 0.00)
         } else {
-            let distanceBeforeLimit = (manager.customSpeedLimit - manager.currentSpeed) * 1000 / 3600
+            let distanceBeforeLimit = abs(pow(manager.customSpeedLimit, 2) - pow(manager.currentSpeed, 2)) * 1000 / 3600
             self.lblDistanceBeforeLimit.text = String(format: "Distance before limit: %.2f km", distanceBeforeLimit)
             self.viewTopBar.backgroundColor = .clear
         }
