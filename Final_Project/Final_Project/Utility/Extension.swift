@@ -9,6 +9,7 @@ import UIKit
 
 enum AssetsColor {
     case primary
+    case primaryAlpha
     case secondary
     case accent
     case background
@@ -21,6 +22,8 @@ extension UIColor {
         switch name {
         case .primary:
             return UIColor(named: "Primary")
+        case .primaryAlpha:
+            return UIColor(named: "Primary")?.withAlphaComponent(0.5)
         case .secondary:
             return UIColor(named: "Secondary")
         case .accent:
@@ -95,6 +98,27 @@ extension UIView {
     func cornerRadius(corner: CGFloat) {
         self.layer.cornerRadius = corner
     }
+    
+    func setGradientBackground() {
+        guard let colorTop = UIColor.appColor(.primary)?.cgColor else {
+            print("Failed to load color for gradient.")
+            return
+        }
+        
+        guard let colorMiddle = UIColor.appColor(.primaryAlpha)?.cgColor else {
+            print("Failed to load color for gradient.")
+            return
+        }
+        
+        let colorBottom = UIColor.clear.cgColor
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [colorTop, colorMiddle, colorBottom]
+        gradientLayer.locations = [0.0, 0.5]
+        gradientLayer.frame = self.bounds
+        self.layer.sublayers?.removeAll { $0 is CAGradientLayer }
+        self.layer.insertSublayer(gradientLayer, at: 0)
+    }
 }
 
 extension UIViewController {
@@ -102,7 +126,23 @@ extension UIViewController {
         let backImage = UIImage(named: "ic_left_arrow")
         self.navigationController?.navigationBar.backIndicatorImage = backImage
         self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = backImage
-        self.navigationController?.navigationBar.backItem?.title = ""
         self.navigationController?.navigationBar.tintColor = .white
+    }
+    
+    func showAlert(title: String, message: String, buttonTitle: String, completion: @escaping () -> Void) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: buttonTitle, style: .default) { _ in
+            completion()
+        }
+        
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func openLocationSettings() {
+        if let appSettings = URL(string: UIApplication.openSettingsURLString) {
+            UIApplication.shared.open(appSettings, options: [:], completionHandler: nil)
+        }
     }
 }

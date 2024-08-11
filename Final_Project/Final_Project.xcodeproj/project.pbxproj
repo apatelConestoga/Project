@@ -10,6 +10,12 @@
 		5D006C2C2C686C39003D1841 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D006C2B2C686C39003D1841 /* Extension.swift */; };
 		5D006C322C688109003D1841 /* AddTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D006C312C688109003D1841 /* AddTripViewController.swift */; };
 		5D006C352C688520003D1841 /* TripListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D006C342C688520003D1841 /* TripListViewController.swift */; };
+		5D109A152C693F9B00AD9F3D /* SelectLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D109A142C693F9B00AD9F3D /* SelectLocationViewController.swift */; };
+		5D109A182C69405300AD9F3D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D109A172C69405300AD9F3D /* LocationManager.swift */; };
+		5D109A1C2C69412100AD9F3D /* TripDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D109A1A2C69412100AD9F3D /* TripDatabase.xcdatamodeld */; };
+		5D109A1E2C69415C00AD9F3D /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D109A1D2C69415C00AD9F3D /* DBHelper.swift */; };
+		5D109A212C6956F500AD9F3D /* LocationSearchTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D109A1F2C6956F500AD9F3D /* LocationSearchTVC.swift */; };
+		5D109A222C6956F500AD9F3D /* LocationSearchTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D109A202C6956F500AD9F3D /* LocationSearchTVC.xib */; };
 		5D4C063D2C6865B100D840FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C063C2C6865B100D840FE /* AppDelegate.swift */; };
 		5D4C063F2C6865B100D840FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C063E2C6865B100D840FE /* SceneDelegate.swift */; };
 		5D4C06442C6865B100D840FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D4C06422C6865B100D840FE /* Main.storyboard */; };
@@ -23,6 +29,12 @@
 		5D006C2B2C686C39003D1841 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		5D006C312C688109003D1841 /* AddTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripViewController.swift; sourceTree = "<group>"; };
 		5D006C342C688520003D1841 /* TripListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListViewController.swift; sourceTree = "<group>"; };
+		5D109A142C693F9B00AD9F3D /* SelectLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationViewController.swift; sourceTree = "<group>"; };
+		5D109A172C69405300AD9F3D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		5D109A1B2C69412100AD9F3D /* TripDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TripDatabase.xcdatamodel; sourceTree = "<group>"; };
+		5D109A1D2C69415C00AD9F3D /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		5D109A1F2C6956F500AD9F3D /* LocationSearchTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTVC.swift; sourceTree = "<group>"; };
+		5D109A202C6956F500AD9F3D /* LocationSearchTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationSearchTVC.xib; sourceTree = "<group>"; };
 		5D4C06392C6865B100D840FE /* Final_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Final_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D4C063C2C6865B100D840FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D4C063E2C6865B100D840FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +73,34 @@
 			path = TripList;
 			sourceTree = "<group>";
 		};
+		5D109A132C693F8800AD9F3D /* SelectLocation */ = {
+			isa = PBXGroup;
+			children = (
+				5D109A142C693F9B00AD9F3D /* SelectLocationViewController.swift */,
+				5D109A1F2C6956F500AD9F3D /* LocationSearchTVC.swift */,
+				5D109A202C6956F500AD9F3D /* LocationSearchTVC.xib */,
+			);
+			path = SelectLocation;
+			sourceTree = "<group>";
+		};
+		5D109A162C69404500AD9F3D /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				5D109A172C69405300AD9F3D /* LocationManager.swift */,
+				5D109A1D2C69415C00AD9F3D /* DBHelper.swift */,
+				5D006C2B2C686C39003D1841 /* Extension.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		5D109A192C69410200AD9F3D /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				5D109A1A2C69412100AD9F3D /* TripDatabase.xcdatamodeld */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
 		5D4C06302C6865B100D840FE = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +120,9 @@
 		5D4C063B2C6865B100D840FE /* Final_Project */ = {
 			isa = PBXGroup;
 			children = (
+				5D109A192C69410200AD9F3D /* DataBase */,
+				5D109A162C69404500AD9F3D /* Utility */,
+				5D109A132C693F8800AD9F3D /* SelectLocation */,
 				5D006C332C688512003D1841 /* TripList */,
 				5D006C302C687E20003D1841 /* AddTrip */,
 				5D4C06502C6865C800D840FE /* Home */,
@@ -90,7 +133,6 @@
 				5D4C06472C6865B200D840FE /* LaunchScreen.storyboard */,
 				5D4C064A2C6865B200D840FE /* Info.plist */,
 				5D4C06532C6866EC00D840FE /* Color.xcassets */,
-				5D006C2B2C686C39003D1841 /* Extension.swift */,
 			);
 			path = Final_Project;
 			sourceTree = "<group>";
@@ -165,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D109A222C6956F500AD9F3D /* LocationSearchTVC.xib in Resources */,
 				5D4C06492C6865B200D840FE /* LaunchScreen.storyboard in Resources */,
 				5D4C06542C6866EC00D840FE /* Color.xcassets in Resources */,
 				5D4C06462C6865B200D840FE /* Assets.xcassets in Resources */,
@@ -179,10 +222,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D109A152C693F9B00AD9F3D /* SelectLocationViewController.swift in Sources */,
 				5D006C322C688109003D1841 /* AddTripViewController.swift in Sources */,
+				5D109A1C2C69412100AD9F3D /* TripDatabase.xcdatamodeld in Sources */,
 				5D4C063D2C6865B100D840FE /* AppDelegate.swift in Sources */,
+				5D109A212C6956F500AD9F3D /* LocationSearchTVC.swift in Sources */,
 				5D4C063F2C6865B100D840FE /* SceneDelegate.swift in Sources */,
+				5D109A182C69405300AD9F3D /* LocationManager.swift in Sources */,
 				5D006C352C688520003D1841 /* TripListViewController.swift in Sources */,
+				5D109A1E2C69415C00AD9F3D /* DBHelper.swift in Sources */,
 				5D006C2C2C686C39003D1841 /* Extension.swift in Sources */,
 				5D4C06522C6865D600D840FE /* HomeViewController.swift in Sources */,
 			);
@@ -415,6 +463,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5D109A1A2C69412100AD9F3D /* TripDatabase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5D109A1B2C69412100AD9F3D /* TripDatabase.xcdatamodel */,
+			);
+			currentVersion = 5D109A1B2C69412100AD9F3D /* TripDatabase.xcdatamodel */;
+			path = TripDatabase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5D4C06312C6865B100D840FE /* Project object */;
 }

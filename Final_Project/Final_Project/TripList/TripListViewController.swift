@@ -12,8 +12,8 @@ class TripListViewController: UIViewController {
     @IBOutlet weak var viewSearch: UIView!
     @IBOutlet weak var txtSearch: UITextField!
     @IBOutlet weak var viewBgTableview: UIView!
+    @IBOutlet weak var constrainViewBgTableViewHeight: NSLayoutConstraint!
     
-    @IBOutlet weak var constrainTopViewBgTableView: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,6 +30,13 @@ class TripListViewController: UIViewController {
         
         self.viewBgTableview.cornerRadius(corner: 20)
         self.viewBgTableview.addDropShadow(shadowColor: UIColor.appColor(.textBlack)?.cgColor)
+        
+        UIView.animate(withDuration: 0.8, delay: 0, options: .curveEaseIn) {
+            self.constrainViewBgTableViewHeight.constant = UIScreen.main.bounds.height - 180
+            self.viewBgTableview.alpha = 1
+            self.view.layoutIfNeeded()
+            
+        }
         
     }
 }
