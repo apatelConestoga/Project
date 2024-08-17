@@ -14,6 +14,7 @@ enum AssetsColor {
     case accent
     case background
     case textBlack
+    case textBlackAlpha
 }
 
 extension UIColor {
@@ -32,6 +33,8 @@ extension UIColor {
             return UIColor(named: "Background")
         case .textBlack:
             return UIColor(named: "Text")
+        case .textBlackAlpha:
+            return UIColor(named: "Text")?.withAlphaComponent(0.5)
         }
     }
 }
@@ -119,6 +122,68 @@ extension UIView {
         self.layer.sublayers?.removeAll { $0 is CAGradientLayer }
         self.layer.insertSublayer(gradientLayer, at: 0)
     }
+    
+    func setGradientBackgroundFromBottom() {
+        guard let colorTop = UIColor.appColor(.textBlack)?.cgColor else {
+            print("Failed to load color for gradient.")
+            return
+        }
+        
+        guard let colorMiddle = UIColor.appColor(.textBlackAlpha)?.cgColor else {
+            print("Failed to load color for gradient.")
+            return
+        }
+        
+        let colorBottom = UIColor.clear.cgColor
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [colorBottom, colorMiddle, colorTop]
+        gradientLayer.locations = [0.0, 0.5, 1.0] // Start at bottom, middle, and top
+        gradientLayer.startPoint = CGPoint(x: 0.5, y: 1.0) // Bottom center
+        gradientLayer.endPoint = CGPoint(x: 0.5, y: 0.0)   // Top center
+        gradientLayer.frame = self.bounds
+        
+        // Remove existing gradient layers to prevent overlap
+        self.layer.sublayers?.removeAll { $0 is CAGradientLayer }
+        
+        // Insert the new gradient layer
+        self.layer.insertSublayer(gradientLayer, at: 0)
+    }
+
+    
+    func drawDottedLine(start p0: CGPoint, end p1: CGPoint) {
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.strokeColor = UIColor.appColor(.primary)?.cgColor
+        shapeLayer.lineWidth = 1
+        shapeLayer.lineDashPattern = [7, 3]
+
+        let path = CGMutablePath()
+        path.addLines(between: [p0, p1])
+        shapeLayer.path = path
+        self.layer.addSublayer(shapeLayer)
+    }
+    
+    func drawVerticalDottedLine(atX xPosition: CGFloat, startY: CGFloat, endY: CGFloat) {
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.strokeColor = UIColor.appColor(.primary)?.cgColor
+        shapeLayer.lineWidth = 1
+        shapeLayer.lineDashPattern = [7, 3] // Length and spacing of the dashes
+        
+        let path = CGMutablePath()
+        path.addLines(between: [CGPoint(x: xPosition, y: startY), CGPoint(x: xPosition, y: endY)])
+        shapeLayer.path = path
+        
+        self.layer.addSublayer(shapeLayer)
+    }
+    
+    func setRandomBackgroundColor() {
+        let red = CGFloat.random(in: 0...1)
+        let green = CGFloat.random(in: 0...1)
+        let blue = CGFloat.random(in: 0...1)
+        
+        let randomColor = UIColor(red: red, green: green, blue: blue, alpha: 0.1)
+        self.backgroundColor = randomColor
+    }
 }
 
 extension UIViewController {
@@ -144,5 +209,34 @@ extension UIViewController {
         if let appSettings = URL(string: UIApplication.openSettingsURLString) {
             UIApplication.shared.open(appSettings, options: [:], completionHandler: nil)
         }
+    }
+}
+
+extension UITextField {
+    
+    func addInputViewDatePicker(target: Any, selector: Selector) {
+        
+        let screenWidth = UIScreen.main.bounds.width
+        
+        //Add DatePicker as inputView
+        let datePicker = UIDatePicker(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 216))
+        datePicker.datePickerMode = .date
+        datePicker.minimumDate = Date()
+        datePicker.preferredDatePickerStyle = .wheels
+        
+        self.inputView = datePicker
+        
+        //Add Tool Bar as input AccessoryView
+        let toolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 44))
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let cancelBarButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelPressed))
+        let doneBarButton = UIBarButtonItem(title: "Done", style: .plain, target: target, action: selector)
+        toolBar.setItems([cancelBarButton, flexibleSpace, doneBarButton], animated: false)
+        
+        self.inputAccessoryView = toolBar
+    }
+    
+    @objc func cancelPressed() {
+        self.resignFirstResponder()
     }
 }

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="UpcomingTripCVC" customModule="Final_Project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="249"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="170" height="249"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ddS-fR-QAr">
+                        <rect key="frame" x="0.0" y="0.0" width="170" height="249"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newDelhi" translatesAutoresizingMaskIntoConstraints="NO" id="X4V-qP-JOR">
+                                <rect key="frame" x="10" y="10" width="150" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="DLl-AD-1dN"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wh2-ob-kQv">
+                                <rect key="frame" x="10" y="10" width="150" height="170"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="q3A-gH-VL1">
+                                <rect key="frame" x="10" y="190" width="150" height="34.333333333333343"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAn-k2-p0G">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="18.333333333333332"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ahmedabad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUH-dF-WMl">
+                                        <rect key="frame" x="0.0" y="21.333333333333343" width="150" height="13"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25th March - 30th March" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uP0-aA-hH6">
+                                <rect key="frame" x="10" y="229.33333333333334" width="150" height="10.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="8"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uP0-aA-hH6" secondAttribute="trailing" constant="10" id="1JM-51-UYf"/>
+                            <constraint firstItem="X4V-qP-JOR" firstAttribute="top" secondItem="ddS-fR-QAr" secondAttribute="top" constant="10" id="1U9-4N-AQx"/>
+                            <constraint firstItem="wh2-ob-kQv" firstAttribute="trailing" secondItem="X4V-qP-JOR" secondAttribute="trailing" id="7vs-AV-suT"/>
+                            <constraint firstItem="uP0-aA-hH6" firstAttribute="top" secondItem="q3A-gH-VL1" secondAttribute="bottom" constant="5" id="DNM-sf-6Ie"/>
+                            <constraint firstItem="wh2-ob-kQv" firstAttribute="bottom" secondItem="X4V-qP-JOR" secondAttribute="bottom" id="E9V-p6-xNk"/>
+                            <constraint firstItem="uP0-aA-hH6" firstAttribute="leading" secondItem="ddS-fR-QAr" secondAttribute="leading" constant="10" id="JUe-td-qi0"/>
+                            <constraint firstAttribute="trailing" secondItem="q3A-gH-VL1" secondAttribute="trailing" constant="10" id="PFW-1X-O1z"/>
+                            <constraint firstAttribute="trailing" secondItem="X4V-qP-JOR" secondAttribute="trailing" constant="10" id="V1s-hH-Nry"/>
+                            <constraint firstItem="wh2-ob-kQv" firstAttribute="leading" secondItem="X4V-qP-JOR" secondAttribute="leading" id="YwE-zj-0LR"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="uP0-aA-hH6" secondAttribute="bottom" constant="5" id="esq-iM-NRf"/>
+                            <constraint firstItem="wh2-ob-kQv" firstAttribute="top" secondItem="X4V-qP-JOR" secondAttribute="top" id="hOW-d5-VGH"/>
+                            <constraint firstItem="q3A-gH-VL1" firstAttribute="top" secondItem="X4V-qP-JOR" secondAttribute="bottom" constant="10" id="iZT-6r-sjZ"/>
+                            <constraint firstItem="X4V-qP-JOR" firstAttribute="leading" secondItem="ddS-fR-QAr" secondAttribute="leading" constant="10" id="ng5-Ku-MRs"/>
+                            <constraint firstItem="q3A-gH-VL1" firstAttribute="leading" secondItem="ddS-fR-QAr" secondAttribute="leading" constant="10" id="sTG-A4-OCJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ddS-fR-QAr" secondAttribute="bottom" id="Mjt-Z0-KFX"/>
+                <constraint firstAttribute="trailing" secondItem="ddS-fR-QAr" secondAttribute="trailing" id="PmO-CF-9dK"/>
+                <constraint firstItem="ddS-fR-QAr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Vi3-t7-JAd"/>
+                <constraint firstItem="ddS-fR-QAr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jYX-z4-2P9"/>
+            </constraints>
+            <size key="customSize" width="256" height="234"/>
+            <connections>
+                <outlet property="imgTrip" destination="X4V-qP-JOR" id="s1A-Mk-YFd"/>
+                <outlet property="lblDate" destination="uP0-aA-hH6" id="bp5-wL-D2x"/>
+                <outlet property="lblDestination" destination="OUH-dF-WMl" id="6c1-bG-R3D"/>
+                <outlet property="lblTripName" destination="kAn-k2-p0G" id="K8i-lY-A0d"/>
+                <outlet property="viewBlur" destination="wh2-ob-kQv" id="ftA-eb-BA7"/>
+                <outlet property="viewContent" destination="ddS-fR-QAr" id="KC5-D0-Ah0"/>
+            </connections>
+            <point key="canvasLocation" x="277.86259541984731" y="84.154929577464799"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="newDelhi" width="1975.6666259765625" height="1317"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -23,6 +23,18 @@
 		5D4C06492C6865B200D840FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D4C06472C6865B200D840FE /* LaunchScreen.storyboard */; };
 		5D4C06522C6865D600D840FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C06512C6865D600D840FE /* HomeViewController.swift */; };
 		5D4C06542C6866EC00D840FE /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D4C06532C6866EC00D840FE /* Color.xcassets */; };
+		5D74060A2C7049700047822A /* SuggestedCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7406082C7049700047822A /* SuggestedCVC.swift */; };
+		5D74060B2C7049700047822A /* SuggestedCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D7406092C7049700047822A /* SuggestedCVC.xib */; };
+		5D74060E2C704D6D0047822A /* UpcomingTripCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D74060C2C704D6D0047822A /* UpcomingTripCVC.swift */; };
+		5D74060F2C704D6D0047822A /* UpcomingTripCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D74060D2C704D6D0047822A /* UpcomingTripCVC.xib */; };
+		5D7406122C704FBC0047822A /* RecentCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7406102C704FBC0047822A /* RecentCVC.swift */; };
+		5D7406132C704FBC0047822A /* RecentCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D7406112C704FBC0047822A /* RecentCVC.xib */; };
+		5D7406162C7065CA0047822A /* TripListTCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7406142C7065CA0047822A /* TripListTCV.swift */; };
+		5D7406172C7065CA0047822A /* TripListTCV.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D7406152C7065CA0047822A /* TripListTCV.xib */; };
+		5D74061A2C70753F0047822A /* TripDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7406192C70753F0047822A /* TripDetailVC.swift */; };
+		5D74061D2C7077500047822A /* ManageExpensesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D74061C2C7077500047822A /* ManageExpensesVC.swift */; };
+		5D7406202C70795C0047822A /* WeatherServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D74061F2C70795C0047822A /* WeatherServices.swift */; };
+		5D7406222C7079850047822A /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7406212C7079850047822A /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +56,18 @@
 		5D4C064A2C6865B200D840FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D4C06512C6865D600D840FE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5D4C06532C6866EC00D840FE /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		5D7406082C7049700047822A /* SuggestedCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedCVC.swift; sourceTree = "<group>"; };
+		5D7406092C7049700047822A /* SuggestedCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuggestedCVC.xib; sourceTree = "<group>"; };
+		5D74060C2C704D6D0047822A /* UpcomingTripCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingTripCVC.swift; sourceTree = "<group>"; };
+		5D74060D2C704D6D0047822A /* UpcomingTripCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingTripCVC.xib; sourceTree = "<group>"; };
+		5D7406102C704FBC0047822A /* RecentCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCVC.swift; sourceTree = "<group>"; };
+		5D7406112C704FBC0047822A /* RecentCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentCVC.xib; sourceTree = "<group>"; };
+		5D7406142C7065CA0047822A /* TripListTCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListTCV.swift; sourceTree = "<group>"; };
+		5D7406152C7065CA0047822A /* TripListTCV.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripListTCV.xib; sourceTree = "<group>"; };
+		5D7406192C70753F0047822A /* TripDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailVC.swift; sourceTree = "<group>"; };
+		5D74061C2C7077500047822A /* ManageExpensesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageExpensesVC.swift; sourceTree = "<group>"; };
+		5D74061F2C70795C0047822A /* WeatherServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServices.swift; sourceTree = "<group>"; };
+		5D7406212C7079850047822A /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				5D006C342C688520003D1841 /* TripListViewController.swift */,
+				5D7406142C7065CA0047822A /* TripListTCV.swift */,
+				5D7406152C7065CA0047822A /* TripListTCV.xib */,
 			);
 			path = TripList;
 			sourceTree = "<group>";
@@ -86,6 +112,7 @@
 		5D109A162C69404500AD9F3D /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				5D74061E2C7079400047822A /* Services */,
 				5D109A172C69405300AD9F3D /* LocationManager.swift */,
 				5D109A1D2C69415C00AD9F3D /* DBHelper.swift */,
 				5D006C2B2C686C39003D1841 /* Extension.swift */,
@@ -124,6 +151,8 @@
 				5D109A162C69404500AD9F3D /* Utility */,
 				5D109A132C693F8800AD9F3D /* SelectLocation */,
 				5D006C332C688512003D1841 /* TripList */,
+				5D74061B2C7077380047822A /* ManageExpenses */,
+				5D7406182C7075270047822A /* TripDetail */,
 				5D006C302C687E20003D1841 /* AddTrip */,
 				5D4C06502C6865C800D840FE /* Home */,
 				5D4C063C2C6865B100D840FE /* AppDelegate.swift */,
@@ -140,9 +169,48 @@
 		5D4C06502C6865C800D840FE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				5D7406072C7049510047822A /* CollectionCells */,
 				5D4C06512C6865D600D840FE /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		5D7406072C7049510047822A /* CollectionCells */ = {
+			isa = PBXGroup;
+			children = (
+				5D7406082C7049700047822A /* SuggestedCVC.swift */,
+				5D7406092C7049700047822A /* SuggestedCVC.xib */,
+				5D74060C2C704D6D0047822A /* UpcomingTripCVC.swift */,
+				5D74060D2C704D6D0047822A /* UpcomingTripCVC.xib */,
+				5D7406102C704FBC0047822A /* RecentCVC.swift */,
+				5D7406112C704FBC0047822A /* RecentCVC.xib */,
+			);
+			path = CollectionCells;
+			sourceTree = "<group>";
+		};
+		5D7406182C7075270047822A /* TripDetail */ = {
+			isa = PBXGroup;
+			children = (
+				5D7406192C70753F0047822A /* TripDetailVC.swift */,
+			);
+			path = TripDetail;
+			sourceTree = "<group>";
+		};
+		5D74061B2C7077380047822A /* ManageExpenses */ = {
+			isa = PBXGroup;
+			children = (
+				5D74061C2C7077500047822A /* ManageExpensesVC.swift */,
+			);
+			path = ManageExpenses;
+			sourceTree = "<group>";
+		};
+		5D74061E2C7079400047822A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5D74061F2C70795C0047822A /* WeatherServices.swift */,
+				5D7406212C7079850047822A /* WeatherModel.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,10 +275,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D74060F2C704D6D0047822A /* UpcomingTripCVC.xib in Resources */,
 				5D109A222C6956F500AD9F3D /* LocationSearchTVC.xib in Resources */,
 				5D4C06492C6865B200D840FE /* LaunchScreen.storyboard in Resources */,
+				5D7406172C7065CA0047822A /* TripListTCV.xib in Resources */,
+				5D7406132C704FBC0047822A /* RecentCVC.xib in Resources */,
 				5D4C06542C6866EC00D840FE /* Color.xcassets in Resources */,
 				5D4C06462C6865B200D840FE /* Assets.xcassets in Resources */,
+				5D74060B2C7049700047822A /* SuggestedCVC.xib in Resources */,
 				5D4C06442C6865B100D840FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,13 +296,21 @@
 			files = (
 				5D109A152C693F9B00AD9F3D /* SelectLocationViewController.swift in Sources */,
 				5D006C322C688109003D1841 /* AddTripViewController.swift in Sources */,
+				5D74060A2C7049700047822A /* SuggestedCVC.swift in Sources */,
 				5D109A1C2C69412100AD9F3D /* TripDatabase.xcdatamodeld in Sources */,
+				5D7406162C7065CA0047822A /* TripListTCV.swift in Sources */,
 				5D4C063D2C6865B100D840FE /* AppDelegate.swift in Sources */,
 				5D109A212C6956F500AD9F3D /* LocationSearchTVC.swift in Sources */,
 				5D4C063F2C6865B100D840FE /* SceneDelegate.swift in Sources */,
+				5D74061A2C70753F0047822A /* TripDetailVC.swift in Sources */,
 				5D109A182C69405300AD9F3D /* LocationManager.swift in Sources */,
+				5D7406122C704FBC0047822A /* RecentCVC.swift in Sources */,
+				5D7406222C7079850047822A /* WeatherModel.swift in Sources */,
 				5D006C352C688520003D1841 /* TripListViewController.swift in Sources */,
+				5D7406202C70795C0047822A /* WeatherServices.swift in Sources */,
+				5D74061D2C7077500047822A /* ManageExpensesVC.swift in Sources */,
 				5D109A1E2C69415C00AD9F3D /* DBHelper.swift in Sources */,
+				5D74060E2C704D6D0047822A /* UpcomingTripCVC.swift in Sources */,
 				5D006C2C2C686C39003D1841 /* Extension.swift in Sources */,
 				5D4C06522C6865D600D840FE /* HomeViewController.swift in Sources */,
 			);

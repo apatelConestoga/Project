@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="TripListTCV" customModule="Final_Project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uks-mC-Vr9">
+                        <rect key="frame" x="10" y="10" width="300" height="100"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newDelhi" translatesAutoresizingMaskIntoConstraints="NO" id="NCp-OK-rIv">
+                                <rect key="frame" x="5" y="5" width="90" height="90"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqm-ux-WGc">
+                                <rect key="frame" x="5" y="5" width="90" height="90"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OYT-Tt-3zC">
+                                <rect key="frame" x="105" y="10" width="71.333333333333314" height="47"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dubai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4F4-Pk-yOM">
+                                        <rect key="frame" x="0.0" y="0.0" width="71.333333333333329" height="21"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ahmedabad " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEN-Ix-aVm">
+                                        <rect key="frame" x="0.0" y="26" width="71.333333333333329" height="21"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$2500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYJ-kc-QB8">
+                                <rect key="frame" x="242.33333333333334" y="11.333333333333334" width="47.666666666666657" height="18.333333333333329"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25th Sep" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="br3-Mn-HZm">
+                                <rect key="frame" x="105.00000000000001" y="74.333333333333329" width="49.666666666666671" height="15.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aqm-ux-WGc" firstAttribute="trailing" secondItem="NCp-OK-rIv" secondAttribute="trailing" id="2jY-nK-h4X"/>
+                            <constraint firstItem="OYT-Tt-3zC" firstAttribute="top" secondItem="NCp-OK-rIv" secondAttribute="top" constant="5" id="5YK-DV-geh"/>
+                            <constraint firstItem="NCp-OK-rIv" firstAttribute="top" secondItem="Uks-mC-Vr9" secondAttribute="top" constant="5" id="6YJ-Yq-AhV"/>
+                            <constraint firstItem="NCp-OK-rIv" firstAttribute="leading" secondItem="Uks-mC-Vr9" secondAttribute="leading" constant="5" id="AGY-nN-4dC"/>
+                            <constraint firstItem="br3-Mn-HZm" firstAttribute="leading" secondItem="OYT-Tt-3zC" secondAttribute="leading" id="Av9-tc-twj"/>
+                            <constraint firstItem="NCp-OK-rIv" firstAttribute="width" secondItem="Uks-mC-Vr9" secondAttribute="width" multiplier="0.3" id="KEF-NO-Vrl"/>
+                            <constraint firstItem="br3-Mn-HZm" firstAttribute="bottom" secondItem="NCp-OK-rIv" secondAttribute="bottom" constant="-5" id="LD3-s2-RvN"/>
+                            <constraint firstAttribute="bottom" secondItem="NCp-OK-rIv" secondAttribute="bottom" constant="5" id="NEH-fy-ZXp"/>
+                            <constraint firstAttribute="trailing" secondItem="lYJ-kc-QB8" secondAttribute="trailing" constant="10" id="Ryv-wZ-O6c"/>
+                            <constraint firstItem="OYT-Tt-3zC" firstAttribute="leading" secondItem="NCp-OK-rIv" secondAttribute="trailing" constant="10" id="V1G-u4-jex"/>
+                            <constraint firstItem="aqm-ux-WGc" firstAttribute="leading" secondItem="NCp-OK-rIv" secondAttribute="leading" id="hjB-da-gG8"/>
+                            <constraint firstItem="lYJ-kc-QB8" firstAttribute="centerY" secondItem="4F4-Pk-yOM" secondAttribute="centerY" id="mEk-Kb-uIx"/>
+                            <constraint firstItem="aqm-ux-WGc" firstAttribute="top" secondItem="NCp-OK-rIv" secondAttribute="top" id="rFb-hs-9q6"/>
+                            <constraint firstItem="aqm-ux-WGc" firstAttribute="bottom" secondItem="NCp-OK-rIv" secondAttribute="bottom" id="zNz-Pe-8Vl"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Uks-mC-Vr9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Qtc-so-s4u"/>
+                    <constraint firstAttribute="bottom" secondItem="Uks-mC-Vr9" secondAttribute="bottom" constant="10" id="RL5-Ha-z6m"/>
+                    <constraint firstItem="Uks-mC-Vr9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Upw-xd-NPl"/>
+                    <constraint firstAttribute="trailing" secondItem="Uks-mC-Vr9" secondAttribute="trailing" constant="10" id="Vr7-ij-vpf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imgTrip" destination="NCp-OK-rIv" id="OkR-bw-IFo"/>
+                <outlet property="lblBudget" destination="lYJ-kc-QB8" id="g54-Wh-if7"/>
+                <outlet property="lblDate" destination="br3-Mn-HZm" id="0ui-za-BEC"/>
+                <outlet property="lblDestination" destination="FEN-Ix-aVm" id="J9g-8U-UFK"/>
+                <outlet property="lblTripName" destination="4F4-Pk-yOM" id="caE-YX-w14"/>
+                <outlet property="viewBg" destination="Uks-mC-Vr9" id="snH-g4-Lt6"/>
+                <outlet property="viewBlur" destination="aqm-ux-WGc" id="opL-V2-C49"/>
+            </connections>
+            <point key="canvasLocation" x="109.9236641221374" y="47.183098591549296"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="newDelhi" width="1975.6666259765625" height="1317"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -11,12 +11,12 @@ class TripListViewController: UIViewController {
 
     @IBOutlet weak var viewSearch: UIView!
     @IBOutlet weak var txtSearch: UITextField!
-    @IBOutlet weak var viewBgTableview: UIView!
-    @IBOutlet weak var constrainViewBgTableViewHeight: NSLayoutConstraint!
     
+    @IBOutlet weak var tblTripList: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.configureTableView()
         self.configureOutlets()
     }
     
@@ -28,15 +28,49 @@ class TripListViewController: UIViewController {
 //        self.txtSearch.delegate = self
         self.txtSearch.withImage(direction: .Left, image: UIImage(named: "ic_search") ?? UIImage(), colorSeparator: .clear, colorBorder: .clear)
         
-        self.viewBgTableview.cornerRadius(corner: 20)
-        self.viewBgTableview.addDropShadow(shadowColor: UIColor.appColor(.textBlack)?.cgColor)
         
-        UIView.animate(withDuration: 0.8, delay: 0, options: .curveEaseIn) {
-            self.constrainViewBgTableViewHeight.constant = UIScreen.main.bounds.height - 180
-            self.viewBgTableview.alpha = 1
-            self.view.layoutIfNeeded()
-            
-        }
+    }
+    
+    private func configureTableView() {
+        self.tblTripList.delegate = self
+        self.tblTripList.dataSource = self
         
+        self.tblTripList.register(TripListTCV.nib, forCellReuseIdentifier: TripListTCV.identifier)
+    }
+}
+
+//MARK: - UITableView Delegate and DataSource
+extension TripListViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: TripListTCV.identifier, for: indexPath) as? TripListTCV else { return UITableViewCell() }
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.redirectToTripDetail()
+    }
+}
+
+//MARK: - Navigation
+extension TripListViewController {
+    
+    func redirectToTripDetail() {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyBoard.instantiateViewController(withIdentifier: "TripDetailVC") as! TripDetailVC
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }
