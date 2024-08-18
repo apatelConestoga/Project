@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 enum AssetsColor {
     case primary
@@ -175,15 +176,6 @@ extension UIView {
         
         self.layer.addSublayer(shapeLayer)
     }
-    
-    func setRandomBackgroundColor() {
-        let red = CGFloat.random(in: 0...1)
-        let green = CGFloat.random(in: 0...1)
-        let blue = CGFloat.random(in: 0...1)
-        
-        let randomColor = UIColor(red: red, green: green, blue: blue, alpha: 0.1)
-        self.backgroundColor = randomColor
-    }
 }
 
 extension UIViewController {
@@ -210,6 +202,41 @@ extension UIViewController {
             UIApplication.shared.open(appSettings, options: [:], completionHandler: nil)
         }
     }
+    
+    func getAddressFromLatLon(latitude: String, longitude: String, completion: @escaping (String?) -> Void) {
+        var addressString: String = ""
+        guard let lat = Double(latitude), let lon = Double(longitude) else {
+            completion(nil)
+            return
+        }
+        
+        let ceo: CLGeocoder = CLGeocoder()
+        let location: CLLocation = CLLocation(latitude: lat, longitude: lon)
+        
+        ceo.reverseGeocodeLocation(location, completionHandler: { (placemarks, error) in
+            if let error = error {
+                print("Reverse geocode failed: \(error.localizedDescription)")
+                completion(nil)
+                return
+            }
+            
+            guard let placemarks = placemarks, placemarks.count > 0 else {
+                completion(nil)
+                return
+            }
+            
+            let placemark = placemarks[0]
+            
+            if let locality = placemark.locality {
+                addressString += locality + ", "
+            }
+            if let country = placemark.country {
+                addressString += country + ", "
+            }
+            
+            completion(addressString.trimmingCharacters(in: .whitespacesAndNewlines))
+        })
+    }
 }
 
 extension UITextField {
@@ -221,7 +248,7 @@ extension UITextField {
         //Add DatePicker as inputView
         let datePicker = UIDatePicker(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 216))
         datePicker.datePickerMode = .date
-        datePicker.minimumDate = Date()
+//        datePicker.minimumDate = Date()
         datePicker.preferredDatePickerStyle = .wheels
         
         self.inputView = datePicker
@@ -238,5 +265,14 @@ extension UITextField {
     
     @objc func cancelPressed() {
         self.resignFirstResponder()
+    }
+}
+
+extension Date {
+    
+    func convertToString(format: String = "dd-MMM-yyyy") -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format
+        return dateFormatter.string(from: self)
     }
 }

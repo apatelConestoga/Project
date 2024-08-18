@@ -7,16 +7,144 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "810D261D-5EB9-403E-B808-2A4324B82899"
+            uuid = "C1994D33-0F1F-49C6-AD2C-FF049C37963A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Final_Project/SelectLocation/SelectLocationViewController.swift"
+            filePath = "Final_Project/Utility/DBHelper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "addPins(for:)"
+            startingLineNumber = "187"
+            endingLineNumber = "187"
+            landmarkName = "addNewTrip(tripName:tripOriginFullAddress:tripOriginLocality:tripOriginLocation:tripDestinationFullAddress:tripDestinationLocality:tripDestinationLocation:tripStartDate:tripEndDate:totalBudget:tripImage:tripDescription:success:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C1994D33-0F1F-49C6-AD2C-FF049C37963A - 1055a72d9a275d5c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Final_Project.DBHelper.addNewTrip(tripName: Swift.String, tripOriginFullAddress: Swift.String, tripOriginLocality: Swift.String, tripOriginLocation: __C.CLLocationCoordinate2D, tripDestinationFullAddress: Swift.String, tripDestinationLocality: Swift.String, tripDestinationLocation: __C.CLLocationCoordinate2D, tripStartDate: Foundation.Date, tripEndDate: Foundation.Date, totalBudget: Swift.String, tripImage: __C.UIImage, tripDescription: Swift.String, success: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "Final_Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adeesh/Personal/Conestoga%20Projects/MobileSolution/Assignment/Assignments_1/Project/Final_Project/Final_Project/Utility/DBHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "187"
+                  endingLineNumber = "187"
+                  offsetFromSymbolStart = "4791">
+               </Location>
+               <Location
+                  uuid = "C1994D33-0F1F-49C6-AD2C-FF049C37963A - 1055a72d9a275d5c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Final_Project.DBHelper.addNewTrip(tripName: Swift.String, tripOriginFullAddress: Swift.String, tripOriginLocality: Swift.String, tripOriginLocation: __C.CLLocationCoordinate2D, tripDestinationFullAddress: Swift.String, tripDestinationLocality: Swift.String, tripDestinationLocation: __C.CLLocationCoordinate2D, tripStartDate: Foundation.Date, tripEndDate: Foundation.Date, totalBudget: Swift.String, tripImage: __C.UIImage, tripDescription: Swift.String, success: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "Final_Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adeesh/Personal/Conestoga%20Projects/MobileSolution/Assignment/Assignments_1/Project/Final_Project/Final_Project/Utility/DBHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "187"
+                  endingLineNumber = "187"
+                  offsetFromSymbolStart = "4864">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "09791176-91A8-443E-9619-6D493232287D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Final_Project/Utility/CustomTabBarController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "tabBarController(_:didSelect:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "09791176-91A8-443E-9619-6D493232287D - 6725bec83047a18a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Final_Project.CustomTabBarController.tabBarController(_: __C.UITabBarController, didSelect: __C.UIViewController) -&gt; ()"
+                  moduleName = "Final_Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adeesh/Personal/Conestoga%20Projects/MobileSolution/Assignment/Assignments_1/Project/Final_Project/Final_Project/Utility/CustomTabBarController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "860">
+               </Location>
+               <Location
+                  uuid = "09791176-91A8-443E-9619-6D493232287D - 6725bec83047a18a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Final_Project.CustomTabBarController.tabBarController(_: __C.UITabBarController, didSelect: __C.UIViewController) -&gt; ()"
+                  moduleName = "Final_Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adeesh/Personal/Conestoga%20Projects/MobileSolution/Assignment/Assignments_1/Project/Final_Project/Final_Project/Utility/CustomTabBarController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "854">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F23EA57A-2C8E-41E1-BDFA-DE1E5444DFB5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Final_Project/TripDetail/TripDetailVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "configureValues()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "73E3B050-1EF8-4A69-A863-4158D26E8675"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Final_Project/TripDetail/TripDetailVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "configureValues()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6A6BF977-D1A4-4C34-A228-C35BD63026B0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Final_Project/Utility/DBHelper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
+            landmarkName = "addNewTrip(tripName:tripOriginFullAddress:tripOriginLocality:tripOriginLocation:tripDestinationFullAddress:tripDestinationLocality:tripDestinationLocation:tripStartDate:tripEndDate:totalBudget:tripImage:tripDescription:success:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

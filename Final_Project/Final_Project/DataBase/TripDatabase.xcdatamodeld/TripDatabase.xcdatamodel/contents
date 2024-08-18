@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="23F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
-    <entity name="TripCalculation" representedClassName="TripCalculation" syncable="YES" codeGenerationType="class">
+    <entity name="TripCalculation" representedClassName="TripCalculation" syncable="YES">
         <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="expenseTitle" optional="YES" attributeType="String"/>
         <relationship name="tripDetails" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TripDetails" inverseName="tripCalculation" inverseEntity="TripDetails"/>
     </entity>
-    <entity name="TripDetails" representedClassName="TripDetails" syncable="YES" codeGenerationType="class">
+    <entity name="TripDetails" representedClassName="TripDetails" syncable="YES">
         <attribute name="destinationLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="destinationLocality" optional="YES" attributeType="String"/>
         <attribute name="destinationLocation" optional="YES" attributeType="String"/>
         <attribute name="destinationLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="originLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="originLocality" optional="YES" attributeType="String"/>
         <attribute name="originLocation" optional="YES" attributeType="String"/>
         <attribute name="originLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="totalBudget" optional="YES" attributeType="String"/>
         <attribute name="tripDescripation" optional="YES" attributeType="String"/>
-        <attribute name="tripId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <relationship name="tripCalculation" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TripCalculation" inverseName="tripDetails" inverseEntity="TripCalculation"/>
+        <attribute name="tripId" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="tripImage" optional="YES" attributeType="Binary"/>
+        <relationship name="tripCalculation" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="TripCalculation" inverseName="tripDetails" inverseEntity="TripCalculation"/>
     </entity>
 </model>

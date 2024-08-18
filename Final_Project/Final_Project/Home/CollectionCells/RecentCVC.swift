@@ -10,9 +10,11 @@ import UIKit
 class RecentCVC: UICollectionViewCell {
 
     
+    @IBOutlet weak var viewBG: UIView!
     @IBOutlet weak var imgTrip: UIImageView!
     @IBOutlet weak var lblTrip: UILabel!
     @IBOutlet weak var lblDestination: UILabel!
+    @IBOutlet weak var lblTravelDate: UILabel!
     @IBOutlet weak var viewBottom: UIView!
     @IBOutlet weak var viewBlur: UIView!
     
@@ -25,11 +27,14 @@ class RecentCVC: UICollectionViewCell {
         self.imgTrip.cornerRadius(corner: 10)
         self.viewBottom.cornerRadius(corner: 10)
         self.viewBlur.cornerRadius(corner: 10)
+        self.viewBG.addDropShadow(shadowColor: UIColor.appColor(.textBlack)?.cgColor, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 3)
     }
     
-    func configureCell(value: SuggestedTrip) {
-        self.lblTrip.text = value.tripName
-        self.imgTrip.image = UIImage(named: value.tripImage)
+    func configureCell(value: TripDetails) {
+        self.lblTrip.text = value.name
+        self.lblDestination.text = value.destinationLocality
+        self.lblTravelDate.text = value.endDate?.convertToString()
+        self.imgTrip.image = UIImage.init(data: value.tripImage!)
     }
 
 }

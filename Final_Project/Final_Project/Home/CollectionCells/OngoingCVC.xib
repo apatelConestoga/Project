@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OngoingCVC" customModule="Final_Project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="235"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="235"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dl7-FC-ChU">
+                        <rect key="frame" x="10" y="10" width="340" height="215"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bgr-Nb-GII">
+                                <rect key="frame" x="10" y="10" width="320" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="2N4-Lh-rAe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btg-sx-cFV">
+                                <rect key="frame" x="10" y="160" width="77" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <color key="textColor" name="Text"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ahmedabad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bk4-fS-cCE">
+                                <rect key="frame" x="10" y="186" width="67.666666666666671" height="15.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                <color key="textColor" name="Text"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBX-y8-iAA">
+                                <rect key="frame" x="82.666666666666671" y="195.66666666666666" width="60.000000000000014" height="4"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="dlE-62-8gN"/>
+                                    <constraint firstAttribute="width" constant="60" id="oJP-cl-KWL"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ahmedabad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvt-ma-Ai5">
+                                <rect key="frame" x="147.66666666666666" y="186" width="67.666666666666657" height="15.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                <color key="textColor" name="Text"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 2500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ih3-Iy-Lgi">
+                                <rect key="frame" x="277.33333333333331" y="160" width="52.666666666666686" height="18.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="14"/>
+                                <color key="textColor" name="Text"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6v-nn-0eQ">
+                                <rect key="frame" x="250" y="183.33333333333334" width="80" height="30"/>
+                                <color key="backgroundColor" name="Primary"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="HRM-3y-GVM"/>
+                                    <constraint firstAttribute="height" constant="30" id="JLu-bX-5tb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Trip Detail">
+                                    <color key="titleColor" name="Background"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTripDetailPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Fl4-hA-FZL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lvt-ma-Ai5" firstAttribute="centerY" secondItem="Bk4-fS-cCE" secondAttribute="centerY" id="2le-pP-bQh"/>
+                            <constraint firstItem="Btg-sx-cFV" firstAttribute="leading" secondItem="bgr-Nb-GII" secondAttribute="leading" id="3hU-Ff-zKj"/>
+                            <constraint firstItem="ih3-Iy-Lgi" firstAttribute="top" secondItem="Btg-sx-cFV" secondAttribute="top" id="6A1-z0-CMQ"/>
+                            <constraint firstItem="bgr-Nb-GII" firstAttribute="top" secondItem="dl7-FC-ChU" secondAttribute="top" constant="10" id="GR4-As-Gil"/>
+                            <constraint firstItem="bBX-y8-iAA" firstAttribute="centerY" secondItem="Bk4-fS-cCE" secondAttribute="centerY" multiplier="1.02" id="H41-a1-Xxt"/>
+                            <constraint firstItem="Bk4-fS-cCE" firstAttribute="top" secondItem="Btg-sx-cFV" secondAttribute="bottom" constant="5" id="HYE-r4-SPu"/>
+                            <constraint firstItem="s6v-nn-0eQ" firstAttribute="trailing" secondItem="ih3-Iy-Lgi" secondAttribute="trailing" id="HnT-Op-Vhb"/>
+                            <constraint firstItem="ih3-Iy-Lgi" firstAttribute="trailing" secondItem="bgr-Nb-GII" secondAttribute="trailing" id="Jz3-o6-BJm"/>
+                            <constraint firstItem="lvt-ma-Ai5" firstAttribute="leading" secondItem="bBX-y8-iAA" secondAttribute="trailing" constant="5" id="b0b-O8-KuZ"/>
+                            <constraint firstItem="bBX-y8-iAA" firstAttribute="leading" secondItem="Bk4-fS-cCE" secondAttribute="trailing" constant="5" id="jE1-XT-JQU"/>
+                            <constraint firstItem="bgr-Nb-GII" firstAttribute="leading" secondItem="dl7-FC-ChU" secondAttribute="leading" constant="10" id="kGr-02-Ny0"/>
+                            <constraint firstItem="s6v-nn-0eQ" firstAttribute="top" secondItem="ih3-Iy-Lgi" secondAttribute="bottom" constant="5" id="nM1-Mh-1HW"/>
+                            <constraint firstItem="Btg-sx-cFV" firstAttribute="top" secondItem="bgr-Nb-GII" secondAttribute="bottom" constant="10" id="qeH-dk-psM"/>
+                            <constraint firstAttribute="trailing" secondItem="bgr-Nb-GII" secondAttribute="trailing" constant="10" id="tZG-YX-2m1"/>
+                            <constraint firstItem="Bk4-fS-cCE" firstAttribute="leading" secondItem="Btg-sx-cFV" secondAttribute="leading" id="vjx-fF-q2S"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="dl7-FC-ChU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="0z4-Tj-FqM"/>
+                <constraint firstAttribute="trailing" secondItem="dl7-FC-ChU" secondAttribute="trailing" constant="10" id="BPf-07-Jzk"/>
+                <constraint firstItem="dl7-FC-ChU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Bso-W7-BE4"/>
+                <constraint firstAttribute="bottom" secondItem="dl7-FC-ChU" secondAttribute="bottom" constant="10" id="Oid-cJ-roK"/>
+            </constraints>
+            <size key="customSize" width="360" height="235"/>
+            <connections>
+                <outlet property="btnTripDetail" destination="s6v-nn-0eQ" id="Hoz-Za-SQh"/>
+                <outlet property="imgOngoing" destination="bgr-Nb-GII" id="B22-Jy-Tfd"/>
+                <outlet property="lblDestination" destination="lvt-ma-Ai5" id="QMx-en-LRh"/>
+                <outlet property="lblOrigin" destination="Bk4-fS-cCE" id="blI-4U-aAI"/>
+                <outlet property="lblTotalBudget" destination="ih3-Iy-Lgi" id="Ush-b6-LRd"/>
+                <outlet property="lblTrip" destination="Btg-sx-cFV" id="B6Y-ok-qkc"/>
+                <outlet property="viewBg" destination="dl7-FC-ChU" id="n0S-pU-R0b"/>
+                <outlet property="viewDash" destination="bBX-y8-iAA" id="o20-hr-1tG"/>
+            </connections>
+            <point key="canvasLocation" x="337.40458015267177" y="84.859154929577471"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Background">
+            <color red="0.92500001192092896" green="0.94099998474121094" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary">
+            <color red="0.20399999618530273" green="0.59600001573562622" blue="0.85900002717971802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text">
+            <color red="0.17299999296665192" green="0.24300000071525574" blue="0.31400001049041748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

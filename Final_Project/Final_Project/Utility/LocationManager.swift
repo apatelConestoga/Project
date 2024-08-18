@@ -25,10 +25,6 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager.requestWhenInUseAuthorization() 
         self.locationManager.requestLocation()
-        
-//        if CLLocationManager.locationServicesEnabled() {
-//            locationManager.startUpdatingLocation()
-//        }
     }
 
     func stopTrip() {
@@ -36,7 +32,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     }
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let newLocation = locations.last else { return }
+        guard let newLocation = locations.first else { return }
         
         self.locationUpdateDelegate?.didUpdateLocation(locations: newLocation)
     }

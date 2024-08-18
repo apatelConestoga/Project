@@ -9,7 +9,6 @@ import UIKit
 
 class TripListTCV: UITableViewCell {
 
-    
     @IBOutlet weak var viewBg: UIView!
     @IBOutlet weak var imgTrip: UIImageView!
     @IBOutlet weak var viewBlur: UIView!
@@ -23,11 +22,7 @@ class TripListTCV: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        
         self.viewBg.addDropShadow(shadowColor: UIColor.appColor(.textBlack)?.cgColor, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 3)
-//        self.viewBg.setRandomBackgroundColor()
-        
         self.imgTrip.cornerRadius(corner: 10)
         self.viewBlur.cornerRadius(corner: 10)
     }
@@ -36,6 +31,14 @@ class TripListTCV: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func configureCell(value: TripDetails) {
+        self.lblTripName.text = value.name
+        self.lblDate.text = (value.startDate?.convertToString() ?? "") + " to " + (value.endDate?.convertToString() ?? "")
+        self.lblDestination.text = value.destinationLocality
+        self.lblBudget.text = "$" + (value.totalBudget ?? "")
+        self.imgTrip.image = UIImage.init(data: value.tripImage!)
     }
     
 }

@@ -23,16 +23,14 @@ class UpcomingTripCVC: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        self.viewContent.cornerRadius(corner: 10)
         self.imgTrip.cornerRadius(corner: 10)
         self.viewBlur.cornerRadius(corner: 10)
-        
+        self.viewContent.addDropShadow(shadowColor: UIColor.appColor(.textBlack)?.cgColor, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 3)
     }
 
-    
-    func configureCell(value: SuggestedTrip) {
-        self.lblTripName.text = value.tripName
-        self.lblDate.text = value.tripDate
-        self.imgTrip.image = UIImage(named: value.tripImage)
+    func configureCell(value: TripDetails) {
+        self.lblTripName.text = value.name
+        self.lblDate.text = value.startDate?.convertToString()
+        self.imgTrip.image = UIImage.init(data: value.tripImage!)
     }
 }

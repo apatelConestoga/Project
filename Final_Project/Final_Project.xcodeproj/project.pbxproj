@@ -35,6 +35,14 @@
 		5D74061D2C7077500047822A /* ManageExpensesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D74061C2C7077500047822A /* ManageExpensesVC.swift */; };
 		5D7406202C70795C0047822A /* WeatherServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D74061F2C70795C0047822A /* WeatherServices.swift */; };
 		5D7406222C7079850047822A /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7406212C7079850047822A /* WeatherModel.swift */; };
+		5D8CE8AA2C710DDC0071F172 /* ManageExpensesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8CE8A82C710DDC0071F172 /* ManageExpensesTVC.swift */; };
+		5D8CE8AB2C710DDC0071F172 /* ManageExpensesTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D8CE8A92C710DDC0071F172 /* ManageExpensesTVC.xib */; };
+		5D8CE8AE2C7142E20071F172 /* OngoingCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8CE8AC2C7142E20071F172 /* OngoingCVC.swift */; };
+		5D8CE8AF2C7142E20071F172 /* OngoingCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D8CE8AD2C7142E20071F172 /* OngoingCVC.xib */; };
+		5DE2B4652C729DC5004522DA /* TripDetails+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2B4612C729DC5004522DA /* TripDetails+CoreDataClass.swift */; };
+		5DE2B4662C729DC5004522DA /* TripDetails+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2B4622C729DC5004522DA /* TripDetails+CoreDataProperties.swift */; };
+		5DE2B4672C729DC5004522DA /* TripCalculation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2B4632C729DC5004522DA /* TripCalculation+CoreDataClass.swift */; };
+		5DE2B4682C729DC5004522DA /* TripCalculation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2B4642C729DC5004522DA /* TripCalculation+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +76,14 @@
 		5D74061C2C7077500047822A /* ManageExpensesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageExpensesVC.swift; sourceTree = "<group>"; };
 		5D74061F2C70795C0047822A /* WeatherServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServices.swift; sourceTree = "<group>"; };
 		5D7406212C7079850047822A /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		5D8CE8A82C710DDC0071F172 /* ManageExpensesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageExpensesTVC.swift; sourceTree = "<group>"; };
+		5D8CE8A92C710DDC0071F172 /* ManageExpensesTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManageExpensesTVC.xib; sourceTree = "<group>"; };
+		5D8CE8AC2C7142E20071F172 /* OngoingCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OngoingCVC.swift; sourceTree = "<group>"; };
+		5D8CE8AD2C7142E20071F172 /* OngoingCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OngoingCVC.xib; sourceTree = "<group>"; };
+		5DE2B4612C729DC5004522DA /* TripDetails+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TripDetails+CoreDataClass.swift"; path = "Final_Project/ManageObjectClasses/TripDetails+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5DE2B4622C729DC5004522DA /* TripDetails+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TripDetails+CoreDataProperties.swift"; path = "Final_Project/ManageObjectClasses/TripDetails+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5DE2B4632C729DC5004522DA /* TripCalculation+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TripCalculation+CoreDataClass.swift"; path = "Final_Project/ManageObjectClasses/TripCalculation+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5DE2B4642C729DC5004522DA /* TripCalculation+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TripCalculation+CoreDataProperties.swift"; path = "Final_Project/ManageObjectClasses/TripCalculation+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +147,10 @@
 		5D4C06302C6865B100D840FE = {
 			isa = PBXGroup;
 			children = (
+				5DE2B4612C729DC5004522DA /* TripDetails+CoreDataClass.swift */,
+				5DE2B4622C729DC5004522DA /* TripDetails+CoreDataProperties.swift */,
+				5DE2B4632C729DC5004522DA /* TripCalculation+CoreDataClass.swift */,
+				5DE2B4642C729DC5004522DA /* TripCalculation+CoreDataProperties.swift */,
 				5D4C063B2C6865B100D840FE /* Final_Project */,
 				5D4C063A2C6865B100D840FE /* Products */,
 			);
@@ -184,6 +204,8 @@
 				5D74060D2C704D6D0047822A /* UpcomingTripCVC.xib */,
 				5D7406102C704FBC0047822A /* RecentCVC.swift */,
 				5D7406112C704FBC0047822A /* RecentCVC.xib */,
+				5D8CE8AC2C7142E20071F172 /* OngoingCVC.swift */,
+				5D8CE8AD2C7142E20071F172 /* OngoingCVC.xib */,
 			);
 			path = CollectionCells;
 			sourceTree = "<group>";
@@ -200,6 +222,8 @@
 			isa = PBXGroup;
 			children = (
 				5D74061C2C7077500047822A /* ManageExpensesVC.swift */,
+				5D8CE8A82C710DDC0071F172 /* ManageExpensesTVC.swift */,
+				5D8CE8A92C710DDC0071F172 /* ManageExpensesTVC.xib */,
 			);
 			path = ManageExpenses;
 			sourceTree = "<group>";
@@ -283,7 +307,9 @@
 				5D4C06542C6866EC00D840FE /* Color.xcassets in Resources */,
 				5D4C06462C6865B200D840FE /* Assets.xcassets in Resources */,
 				5D74060B2C7049700047822A /* SuggestedCVC.xib in Resources */,
+				5D8CE8AF2C7142E20071F172 /* OngoingCVC.xib in Resources */,
 				5D4C06442C6865B100D840FE /* Main.storyboard in Resources */,
+				5D8CE8AB2C710DDC0071F172 /* ManageExpensesTVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,20 +323,26 @@
 				5D109A152C693F9B00AD9F3D /* SelectLocationViewController.swift in Sources */,
 				5D006C322C688109003D1841 /* AddTripViewController.swift in Sources */,
 				5D74060A2C7049700047822A /* SuggestedCVC.swift in Sources */,
+				5D8CE8AA2C710DDC0071F172 /* ManageExpensesTVC.swift in Sources */,
 				5D109A1C2C69412100AD9F3D /* TripDatabase.xcdatamodeld in Sources */,
 				5D7406162C7065CA0047822A /* TripListTCV.swift in Sources */,
 				5D4C063D2C6865B100D840FE /* AppDelegate.swift in Sources */,
 				5D109A212C6956F500AD9F3D /* LocationSearchTVC.swift in Sources */,
+				5DE2B4672C729DC5004522DA /* TripCalculation+CoreDataClass.swift in Sources */,
+				5D8CE8AE2C7142E20071F172 /* OngoingCVC.swift in Sources */,
 				5D4C063F2C6865B100D840FE /* SceneDelegate.swift in Sources */,
 				5D74061A2C70753F0047822A /* TripDetailVC.swift in Sources */,
 				5D109A182C69405300AD9F3D /* LocationManager.swift in Sources */,
 				5D7406122C704FBC0047822A /* RecentCVC.swift in Sources */,
+				5DE2B4662C729DC5004522DA /* TripDetails+CoreDataProperties.swift in Sources */,
+				5DE2B4652C729DC5004522DA /* TripDetails+CoreDataClass.swift in Sources */,
 				5D7406222C7079850047822A /* WeatherModel.swift in Sources */,
 				5D006C352C688520003D1841 /* TripListViewController.swift in Sources */,
 				5D7406202C70795C0047822A /* WeatherServices.swift in Sources */,
 				5D74061D2C7077500047822A /* ManageExpensesVC.swift in Sources */,
 				5D109A1E2C69415C00AD9F3D /* DBHelper.swift in Sources */,
 				5D74060E2C704D6D0047822A /* UpcomingTripCVC.swift in Sources */,
+				5DE2B4682C729DC5004522DA /* TripCalculation+CoreDataProperties.swift in Sources */,
 				5D006C2C2C686C39003D1841 /* Extension.swift in Sources */,
 				5D4C06522C6865D600D840FE /* HomeViewController.swift in Sources */,
 			);

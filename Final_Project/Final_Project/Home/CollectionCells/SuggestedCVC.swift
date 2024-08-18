@@ -25,7 +25,7 @@ class SuggestedCVC: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        self.viewContent.addDropShadow(shadowColor: UIColor.appColor(.textBlack)?.cgColor, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
+        self.viewContent.addDropShadow(shadowColor: UIColor.appColor(.textBlack)?.cgColor, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 3)
         self.viewTag.cornerRadius(corner: 10)
         self.imgTrip.cornerRadius(corner: 10)
         self.viewBlur.cornerRadius(corner: 10)
