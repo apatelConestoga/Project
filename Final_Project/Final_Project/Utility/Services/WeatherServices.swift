@@ -8,9 +8,9 @@
 import UIKit
 
 class WeatherService {
-    let apiKey = "3c86cdb94245fa2ca3d0c97d28abc112"
+    let apiKey = "a4ddf3c091e88cb8f30adca79bb6ee92"
 //    a4ddf3c091e88cb8f30adca79bb6ee92
-    
+//    3c86cdb94245fa2ca3d0c97d28abc112
 //    let urlString = "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=\(apiKey)&units=metric"
     
     func fetchWeatherData(latitude: Double, longitude: Double, address: String, completion: @escaping (Result<WeatherModel, Error>) -> Void) {

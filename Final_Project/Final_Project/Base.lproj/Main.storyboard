@@ -471,7 +471,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9QA-Cb-CJZ">
                                                                 <rect key="frame" x="0.0" y="45" width="253" height="40"/>
                                                                 <subviews>
-                                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Origin" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EIl-ZG-Ptm">
+                                                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Origin" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EIl-ZG-Ptm">
                                                                         <rect key="frame" x="0.0" y="0.0" width="205" height="40"/>
                                                                         <color key="textColor" name="Text"/>
                                                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
@@ -493,7 +493,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5Mm-Y3-Z2A">
                                                                 <rect key="frame" x="0.0" y="90" width="253" height="40"/>
                                                                 <subviews>
-                                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Destination" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d4q-WI-GHX">
+                                                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Destination" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d4q-WI-GHX">
                                                                         <rect key="frame" x="0.0" y="0.0" width="205" height="40"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="POt-9f-P4p"/>
@@ -540,7 +540,7 @@
                                                                 </constraints>
                                                                 <color key="textColor" name="Text"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -797,7 +797,7 @@
                                                 </constraints>
                                                 <color key="textColor" name="Text"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
