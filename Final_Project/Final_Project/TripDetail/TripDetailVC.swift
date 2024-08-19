@@ -84,6 +84,12 @@ class TripDetailVC: UIViewController, MKMapViewDelegate {
                     
                 case .failure(let error):
                     print("Error fetching weather data: \(error.localizedDescription)")
+                    DispatchQueue.main.async {
+                        self.showAlert(title: "Weather", message: "City not found. Please try another city", buttonTitle: "Ok") {
+                            self.dismiss(animated: true)
+                        }
+                    }
+                    
                 }
             }
         }

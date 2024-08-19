@@ -103,38 +103,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F23EA57A-2C8E-41E1-BDFA-DE1E5444DFB5"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Final_Project/TripDetail/TripDetailVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "configureValues()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "73E3B050-1EF8-4A69-A863-4158D26E8675"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Final_Project/TripDetail/TripDetailVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "configureValues()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "6A6BF977-D1A4-4C34-A228-C35BD63026B0"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -146,6 +114,54 @@
             endingLineNumber = "167"
             landmarkName = "addNewTrip(tripName:tripOriginFullAddress:tripOriginLocality:tripOriginLocation:tripDestinationFullAddress:tripDestinationLocality:tripDestinationLocation:tripStartDate:tripEndDate:totalBudget:tripImage:tripDescription:success:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D029261E-7A96-48C4-801F-C39E608A3613"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Final_Project/Utility/Services/WeatherServices.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "fetchWeatherData(latitude:longitude:address:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D029261E-7A96-48C4-801F-C39E608A3613 - 4882234c953f2c7a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Final_Project.WeatherService.fetchWeatherData(latitude: Swift.Double, longitude: Swift.Double, address: Swift.String, completion: (Swift.Result&lt;Final_Project.WeatherModel, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Final_Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adeesh/Personal/Conestoga%20Projects/MobileSolution/Assignment/Assignments_1/Project/Final_Project/Final_Project/Utility/Services/WeatherServices.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "837">
+               </Location>
+               <Location
+                  uuid = "D029261E-7A96-48C4-801F-C39E608A3613 - 7a9dc97f4e083b9a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Final_Project.WeatherService.fetchWeatherData(latitude: Swift.Double, longitude: Swift.Double, address: Swift.String, completion: (Swift.Result&lt;Final_Project.WeatherModel, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Final_Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adeesh/Personal/Conestoga%20Projects/MobileSolution/Assignment/Assignments_1/Project/Final_Project/Final_Project/Utility/Services/WeatherServices.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "258">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
